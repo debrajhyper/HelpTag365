@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/fonts/Poppins/poppins-regular-webfont.woff2) format('woff2');
+  }
+}
+
+:root {
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1b3154;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  /* min-height: 100vh; */
+  /* min-width: 100vw; */
+  /* overflow: hidden; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+@layer components {
+  .hero-gradient {
+    @apply w-[96%] rounded-bl-[4rem] rounded-br-[4rem] bg-[radial-gradient(50%_50%_at_50%_50%,_#FFFFFF_0%,_#EDF4FE_100%)];
+  }
+}
