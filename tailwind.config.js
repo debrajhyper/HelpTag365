@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        18: '4.438rem',
+        34: '8.438rem',
+      },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
       },

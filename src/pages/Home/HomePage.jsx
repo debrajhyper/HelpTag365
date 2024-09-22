@@ -9,6 +9,19 @@ import { Badge, BorderSection, FilledSection, GradientSection, FeatureCard, Proc
 import processQRImg from '../../images/processQR.svg';
 import processScanImg from '../../images/processScan.svg';
 import processConnectImg from '../../images/processConnect.svg';
+import backgroundGridHeaderImg from '../../images/backgroundGridHeader.svg';
+import company1Img from '../../images/company1.svg';
+import company2Img from '../../images/company2.svg';
+import company3Img from '../../images/company3.svg';
+import company4Img from '../../images/company4.svg';
+import company5Img from '../../images/company5.svg';
+import company6Img from '../../images/company6.svg';
+import company7Img from '../../images/company7.svg';
+import profilePicImg from '../../images/profilePic.svg';
+import member1Img from '../../images/member1.svg';
+import member2Img from '../../images/member2.svg';
+
+const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img, company7Img]
 
 const services = [
     ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
@@ -46,17 +59,20 @@ const featureCards = [
 const processCards = [
     {
         image: processQRImg,
+        imageHeight: 36,
         title: 'Step 01 - Attach',
         subTitle: 'Place the QR sticker on your vehicle.',
     },
     {
         image: processScanImg,
+        imageHeight: 206,
         imgPosition: 'bottom',
         title: 'Step 02 - Scan',
         subTitle: 'Anyone needing to contact you can scan the QR code with their smartphone.',
     },
     {
         image: processConnectImg,
+        imageHeight: 206,
         imgPosition: 'top',
         title: 'Step 03 - Connect',
         subTitle: 'The scanner is directed to a secure platform where they can leave a message or get in touch without accessing your personal details.',
@@ -68,101 +84,111 @@ const reviewCards = [
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
     {
         image: starImg,
         title: 'Super effective!',
         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
-        profilePic: 'adadadasdadasdasdasd',
+        profilePic: profilePicImg,
         name: 'Yeshe Hagl',
     },
 ]
 
 const teamCards = [
     {
-        image: '',
+        image: member1Img,
         name: 'Harmeet Godhani',
         title: 'Founder @HelpTag365',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-    }
+    },
+    {
+        image: member2Img,
+        name: 'Full name',
+        title: 'Job title',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+    },
 ]
 
 
 export function HomePage() {
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
-            <section className="hero-gradient p-4 md:p-10 pt-24 md:pt-40 relative">
-                <div className="mx-auto grid justify-center justify-items-center gap-8 md:gap-12">
+            <section className="relative hero-gradient">
+                <div className="absolute inset-0 hero-gradient"></div>
+                <div className="absolute inset-0 z-10 flex justify-center items-center">
+                    <img src={backgroundGridHeaderImg} className='w-auto h-full  mx-auto object-cover' />
+                </div>
+                <div className="relative z-20 p-4 md:p-10 pt-24 md:pt-28 mx-auto grid justify-center justify-items-center gap-8 md:gap-12">
                     <Badge text="6000+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
-                        <h1 className="text-primary-darker text-6xl md:text-7xl font-semibold tracking-tight leading-tight">
+                        <h1 className="text-primary-darker text-6xl font-semibold tracking-tight leading-tight">
                             In an emergency, <br /> help is one scan away
                         </h1>
-                        <p className="text-md text-dimmed mt-2 md:mt-6">
+                        <p className="text-md text-dimmed mt-2 md:mt-4">
                             Whether your car is in trouble or passengers are at risk, ensure immediate contact with emergency
                             services, family, or roadside assistance—all just one scan away.
                         </p>
                     </div>
                     <div className="text-center mb-14 md:mb-0">
-                        <button className="py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
+                        <button className="drop-shadow-md py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
                             Get a FREE trial
                         </button>
                         <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
@@ -200,8 +226,17 @@ export function HomePage() {
                     Trusted by thousand
                     companies in the world
                 </p>
-                <div className='col-auto w-full flex justify-start items-center gap-14 overflow-auto'>
-                    PRESS TRUST OF INDIA
+                <div className='col-span-6 w-full -mr-20 overflow-hidden relative'>
+                    <div className="w-full h-full absolute">
+                        <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
+                    </div>
+                    <div className='flex justify-start items-center gap-14 animate-smooth-scroll opacity-80'>
+                        {
+                            [...companiesImg, ...companiesImg].map((img, index) => (
+                                <img key={index} src={img} alt="company" className='w-auto h-fit object-contain' />
+                            ))
+                        }
+                    </div>
                 </div>
             </section>
             <GradientSection className='flex flex-col justify-center items-center gap-6'>
@@ -285,8 +320,8 @@ export function HomePage() {
                 </div>
                 <div className="container mx-auto w-full overflow-hidden relative">
                     <div className="w-full h-full absolute">
-                        <div className="w-1/6 h-full absolute z-50 left-0" style={{ background: 'linear-gradient(to right, #ffffffa8 0%, #ffffff00 100%)' }}></div>
-                        <div className="w-1/6 h-full absolute z-50 right-0" style={{ background: 'linear-gradient(to left, #ffffffa8 0%, #ffffff00 100%)' }}></div>
+                        <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffffa8 0%, #ffffff00 100%)' }}></div>
+                        <div className="w-1/6 h-full absolute z-10 right-0" style={{ background: 'linear-gradient(to left, #ffffffa8 0%, #ffffff00 100%)' }}></div>
                     </div>
                     <div className="w-fit flex items-center justify-between gap-6 animate-carousel-scroll hover:pause">
                         {

@@ -45,6 +45,12 @@ body {
   .pause {
     animation-play-state: paused;
   }
+  .fade_left {
+    background: linear-gradient(to right, #ffffffa8 0%, #ffffff00 100%);
+  }
+  .fade-right {
+    background: linear-gradient(to left, #ffffffa8 0%, #ffffff00 100%);
+  }
 }
 
 @layer components {

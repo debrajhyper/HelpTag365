@@ -24,17 +24,17 @@ const footerLinks = {
 }
 
 export const Footer = () => (
-    <footer className="w-full h-full mt-10 p-4 md:p-8 pb-0 bg-primary-light rounded-t-[2rem] md:rounded-t-[3.5rem]">
+    <footer className="w-full mt-10 pt-4 md:pt-8 px-4 md:px-8 bg-primary-light rounded-t-[2rem] md:rounded-t-[3.5rem]">
         <div className="bg-white p-6 md:p-16 pt-16 pb-2 md:pb-8 divide-y rounded-t-2xl md:rounded-t-3xl">
-            <div className="pb-8 grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div className="pb-8 grid grid-cols-1 md:grid-cols-2  gap-16 md:gap-8 xl:gap-20">
                 <div className='max-w-[34rem] space-y-8'>
                     <Link to={HOME_PATH} className="flex gap-1">
                         <img src={logoImg} alt="logo" className="h-3" />
                         <img src={brandName} alt="brand name" className="h-3" />
                     </Link>
                     <p className='text-dimmed text-md'>Which gives a total solution of 8 problems. It provides solutions to many problems such as car no-parking, car lights staying on, car door staying open, other people&apos;s car not being able to leave because of your car, car accident.</p>
-                    <div className='flex flex-col md:flex-row justify-start items-center gap-3'>
-                        <Input wrapperClassName='mb-0 w-full md:w-3/6' className='p-2.5' id="email" name="email" type="email" placeholder="example@gmail.com" />
+                    <div className='flex flex-col sm:flex-row justify-start items-center gap-3'>
+                        <Input wrapperClassName='sm:mb-0 w-full md:6/6 xl:w-3/6' className='p-2.5' id="email" name="email" type="email" placeholder="example@gmail.com" />
                         <button className="w-full sm:w-fit py-2.5 px-8 font-semibold border rounded-xl bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white cursor-pointer">
                             Submit
                         </button>
