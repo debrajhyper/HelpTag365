@@ -34,6 +34,26 @@ export default {
           },
         },
         hero_gradient: 'radial-gradient(50%_50%_at_50%_50%,_#FFFFFF_0%,_#EDF4FE_100%)',
+        dimmed: '#8492A9',
+      },
+      animation: {
+        'smooth-scroll': 'smoothScroll 30s linear infinite',
+        'smooth-scroll-reverse': 'smoothScrollReverse 30s linear infinite',
+        'carousel-scroll': 'carouselScroll 100s linear infinite',
+      },
+      keyframes: {
+        smoothScroll: {
+          '0%': { transform: 'translateX(0)', },
+          '100%': { transform: 'translateX(-50%)', },
+        },
+        smoothScrollReverse: {
+          '0%': { transform: 'translateX(-50%)', },
+          '100%': { transform: 'translateX(0)', },
+        },
+        carouselScroll: {
+          '0%': { transform: 'translateX(0)', },
+          '100%': { transform: 'translateX(-100%)', },
+        }
       },
     },
   },

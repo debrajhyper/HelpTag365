@@ -41,8 +41,14 @@ body {
   /* align-items: center; */
 }
 
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
 @layer components {
   .hero-gradient {
-    @apply w-[96%] rounded-bl-[4rem] rounded-br-[4rem] bg-[radial-gradient(50%_50%_at_50%_50%,_#FFFFFF_0%,_#EDF4FE_100%)];
+    @apply w-full rounded-bl-[3.5rem] rounded-br-[3.5rem] bg-[radial-gradient(50%_50%_at_50%_50%,_#FFFFFF_0%,_#EDF4FE_100%)];
   }
 }
