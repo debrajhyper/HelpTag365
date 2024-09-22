@@ -59,7 +59,8 @@ export const Footer = () => (
             </div>
             <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-dimmed">
                 <p>© 2024 Helptag365. All right reserved.</p>
-                <p>Designed by @Zetastudio</p>
+                {/* <p>Designed by @Zetastudio</p> */}
+                <p>Developed by <a className='underline' href="https://www.linkedin.com/in/debrajkarmakar010/" target="_blank" rel="noreferrer">Debraj Karmakar</a></p>
             </div>
         </div>
     </footer>

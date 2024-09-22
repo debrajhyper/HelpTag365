@@ -34,25 +34,25 @@ const featureCards = [
         image: communicationImg,
         title: 'Seamless Communication',
         description: 'Our QR stickers allow for instant contact between car owners and concerned parties, ensuring quick and efficient communication.',
-        rowSpan: 3,
+        rowSpan: 2,
     },
     {
         image: privacyImg,
         title: 'Privacy Protection',
         description: 'We prioritize your privacy. Our solutions enable contact without revealing sensitive personal information.',
-        rowSpan: 2,
+        rowSpan: 1,
     },
     {
         image: safetyImg,
         title: 'Enhanced Safety',
         description: 'Our stickers are designed to improve safety by providing a reliable way to communicate in case of emergencies or incidents.',
-        rowSpan: 3,
+        rowSpan: 2,
     },
     {
         image: easyToUseImg,
         title: 'Easy to Use',
         description: 'Simply scan the QR code to access essential information and connect with the car owner.',
-        rowSpan: 2,
+        rowSpan: 1,
     },
 ]
 
@@ -276,10 +276,10 @@ export function HomePage() {
                         Our cutting-edge technology ensures that you can connect with car owners effortlessly, without compromising on privacy.
                     </p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 grid-rows-auto md:grid-rows-5 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-6'>
                     {
                         featureCards.map((feature, index) => <FeatureCard key={index} {...feature} />)
-                    }
+                    }   
                 </div>
             </BorderSection>
             <FilledSection className='grid grid-cols-1 md:grid-flow-col grid-rows-2 gap-12 md:gap-2'>
