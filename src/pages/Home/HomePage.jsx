@@ -276,7 +276,7 @@ export function HomePage() {
                         Our cutting-edge technology ensures that you can connect with car owners effortlessly, without compromising on privacy.
                     </p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 auto-rows-min md:auto-rows-fr gap-6'>
                     {
                         featureCards.map((feature, index) => <FeatureCard key={index} {...feature} />)
                     }   
