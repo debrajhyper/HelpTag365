@@ -18,7 +18,7 @@ export function Header() {
                     <img src={brandName} alt="brand name" className="h-3.5 md:h-4" />
                 </Link>
                 <div className='flex md:hidden'>
-                    <button onClick={() => setMenuOpen(!menuOpen)} className='p-1.5 bg-white rounded-xl'>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className='p-2 px-2.5 bg-white rounded-xl'>
                         <Menu />
                     </button>
                 </div>

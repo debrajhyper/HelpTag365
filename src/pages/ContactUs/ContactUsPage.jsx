@@ -84,8 +84,8 @@ export function ContactUsPage() {
                     <div className='col-span-1 md:col-span-3 lg:col-span-1 xl:px-8'>
                         <ModularForm title="Get in touch" description="You can reach us anytime 24/7." submitButtonName='Submit' onSubmit={handleSubmit}>
                             <div className='grid grid-cols-2 gap-x-4 gap-y-2 md:gap-y-4'>
-                                <Input label="First name" id="firstName" name="firstName" type="text" placeholder="Your first name" value={contactFormData.firstName} onChange={handleChange} required />
-                                <Input label="Last name" id="lastName" name="lastName" type="text" placeholder="Your last name" value={contactFormData.lastName} onChange={handleChange} required />
+                                <Input wrapperClassName='col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-1' label="First name" id="firstName" name="firstName" type="text" placeholder="Your first name" value={contactFormData.firstName} onChange={handleChange} required />
+                                <Input wrapperClassName='col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-1' label="Last name" id="lastName" name="lastName" type="text" placeholder="Your last name" value={contactFormData.lastName} onChange={handleChange} required />
                                 <Input wrapperClassName='col-span-2' label="Email address" id="email" name="email" type="email" placeholder="example@gmail.com" value={contactFormData.email} onChange={handleChange} required />
                                 <Input wrapperClassName='col-span-2' label="Mobile number" id="mobile" name="mobile" type="number" placeholder="+91 00000 00000" value={contactFormData.mobile} onChange={handleChange} required />
                                 <Textarea wrapperClassName='col-span-2' label="Description" id="message" name="message" placeholder="Please write here that how we can help you?" rows={4} value={contactFormData.message} onChange={handleChange} />
