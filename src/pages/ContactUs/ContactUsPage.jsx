@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { MoveLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import mapImg from '../../images/map.svg';
 import { HOME_PATH } from '../../routes';
 import { SubContent } from './SubContent';
-import { Checkbox, Input, ModularForm, Textarea } from '../../components';
+import { Checkbox, Input, ModularForm, Textarea, Accordion, QRSection, HeroBgSection } from '../../components';
 
 const defaultFormData = {
     firstName: '',
@@ -13,6 +14,33 @@ const defaultFormData = {
     message: '',
     terms: false
 }
+
+const accordionItems = [
+    {
+        title: "Is there a free trial available?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+        title: "Can I change my plan later?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+        title: "What is your cancellation policy?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+        title: "Can other info be added to an invoice?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+        title: "How does billing work?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+        title: "How do I change my account email?",
+        content: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+];
 
 export function ContactUsPage() {
     const [contactFormData, setContactFormData] = useState(defaultFormData);
@@ -33,9 +61,9 @@ export function ContactUsPage() {
     }
 
     return (
-        <main className='w-full px-2.5 md:px-8'>
-            <section className="hero-gradient p-4 md:p-10 pt-24 md:pt-32 relative">
-                <div className="mx-auto grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-10 xl:gap-20">
+        <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
+            <HeroBgSection sectionClassName='!pb-2'>
+                <div className="md:pt-4 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 gap-10 xl:gap-20">
                     <div className="col-span-1 md:col-span-2 lg:col-span-1 flex flex-col gap-y-10 md:gap-y-16">
                         <button onClick={() => navigate(HOME_PATH)} className='flex justify-start items-center gap-1 text-primary-normal tracking-tight text-sm cursor-pointer'>
                             <MoveLeft size={18} />
@@ -54,7 +82,7 @@ export function ContactUsPage() {
                         </div>
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-1 xl:px-8'>
-                        <ModularForm title="Get in touch" description="You can reach us anytime 24/7." onSubmit={handleSubmit}>
+                        <ModularForm title="Get in touch" description="You can reach us anytime 24/7." submitButtonName='Submit' onSubmit={handleSubmit}>
                             <div className='grid grid-cols-2 gap-x-4 gap-y-2 md:gap-y-4'>
                                 <Input label="First name" id="firstName" name="firstName" type="text" placeholder="Your first name" value={contactFormData.firstName} onChange={handleChange} required />
                                 <Input label="Last name" id="lastName" name="lastName" type="text" placeholder="Your last name" value={contactFormData.lastName} onChange={handleChange} required />
@@ -69,7 +97,40 @@ export function ContactUsPage() {
                         <SubContent />
                     </div>
                 </div>
+            </HeroBgSection>
+            <section className='mx-4 md:mx-6 xl:mx-10 my-10 md:my-20 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16'>
+                <div className='w-full h-full md:h-[28rem]'>
+                    <img src={mapImg} alt="Map" className='w-full h-full object-contain' />
+                </div>
+                <div className='space-y-4 md:space-y-8'>
+                    <p className='text-sm text-primary-normal'>Our location</p>
+                    <h2 className='text-4xl font-semibold'>Connecting near and far</h2>
+                    <div className='space-y-2 md:space-y-4'>
+                        <p className='font-medium'>Headquarters</p>
+                        <p className='text-sm text-dimmed'>Vishalnagar Society
+                            <br />Marigold Residency
+                            <br />Sarthana, Surat
+                            <br />Gujarat, India</p>
+                    </div>
+                </div>
             </section>
+            <section className='py-14 md:py-24 px-4 md:px-8 xl:px-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16'>
+                <div className='space-y-8'>
+                    <p className='text-sm text-primary-normal'>FAQs</p>
+                    <div className='space-y-4'>
+                        <h2 className='text-5xl font-semibold leading-tight'>Frequently asked questions</h2>
+                        <p className='text-sm text-dimmed'>If there are question you want to ask. We’ll answer all your question.</p>
+                    </div>
+                    <div className='flex flex-col sm:flex-row justify-start items-center gap-3'>
+                        <Input wrapperClassName='sm:mb-0 w-full md:2/5 xl:w-2/5' className='p-2.5' id="email" name="email" type="email" placeholder="example@gmail.com" />
+                        <button className="w-full sm:w-fit py-2.5 px-8 font-semibold border rounded-xl bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white cursor-pointer">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <Accordion items={accordionItems} />
+            </section>
+            <QRSection />
         </main>
     )
 }

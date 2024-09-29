@@ -1,15 +1,8 @@
 import starImg from '../../images/star.svg';
-import communicationImg from '../../images/communication.svg';
-import privacyImg from '../../images/privacy.svg';
-import safetyImg from '../../images/safety.svg';
-import easyToUseImg from '../../images/easyToUse.svg';
-import QRImg from '../../images/QR.svg';
-import { MoveUpRight } from 'lucide-react';
-import { Badge, BorderSection, FilledSection, GradientSection, FeatureCard, ProcessCard, ReviewCard, TeamCard } from '../../components';
+import { Badge, BorderSection, GradientSection, ProcessCard, ReviewCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365 } from '../../components';
 import processQRImg from '../../images/processQR.svg';
 import processScanImg from '../../images/processScan.svg';
 import processConnectImg from '../../images/processConnect.svg';
-import backgroundGridHeaderImg from '../../images/backgroundGridHeader.svg';
 import company1Img from '../../images/company1.svg';
 import company2Img from '../../images/company2.svg';
 import company3Img from '../../images/company3.svg';
@@ -18,8 +11,7 @@ import company5Img from '../../images/company5.svg';
 import company6Img from '../../images/company6.svg';
 import company7Img from '../../images/company7.svg';
 import profilePicImg from '../../images/profilePic.svg';
-import member1Img from '../../images/member1.svg';
-import member2Img from '../../images/member2.svg';
+import tickImg from '../../images/tick.svg';
 
 const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img, company7Img]
 
@@ -27,33 +19,6 @@ const services = [
     ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
     ['Pet inside vehicle', 'Child inside vehicle', '⁠Elderly inside vehicle', 'Driver of vehicle is in trouble', 'Vehicle is stolen/misplaced', 'Vehicle fuel empty', 'vehicle on fire'],
     ['Vehicle needs tyre repair', 'Vehicle windows open', 'Driver misbehaving with passenger', 'Driver driving dangerously', 'Driver taking unsafe route', 'Driver keeping car dirty']
-]
-
-const featureCards = [
-    {
-        image: communicationImg,
-        title: 'Seamless Communication',
-        description: 'Our QR stickers allow for instant contact between car owners and concerned parties, ensuring quick and efficient communication.',
-        rowSpan: 2,
-    },
-    {
-        image: privacyImg,
-        title: 'Privacy Protection',
-        description: 'We prioritize your privacy. Our solutions enable contact without revealing sensitive personal information.',
-        rowSpan: 1,
-    },
-    {
-        image: safetyImg,
-        title: 'Enhanced Safety',
-        description: 'Our stickers are designed to improve safety by providing a reliable way to communicate in case of emergencies or incidents.',
-        rowSpan: 2,
-    },
-    {
-        image: easyToUseImg,
-        title: 'Easy to Use',
-        description: 'Simply scan the QR code to access essential information and connect with the car owner.',
-        rowSpan: 1,
-    },
 ]
 
 const processCards = [
@@ -152,35 +117,51 @@ const reviewCards = [
     },
 ]
 
-const teamCards = [
+const pricingCards = [
     {
-        image: member1Img,
-        name: 'Harmeet Godhani',
-        title: 'Founder @HelpTag365',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+        type: 'For Individual',
+        price: '₹199/Year',
+        description: 'Ensure peace of mind for you and your loved ones, no matter where the road takes you.',
+        features: [
+            '24/7 emergency assistance',
+            'Real-time alerts and notifications',
+            'Privacy-first vehicle monitoring',
+            'Easy setup with any vehicle',
+            'Hassle-free communication with loved ones',
+        ],
+        button: {
+            text: 'Secure Your Vehicle Now',
+            type: 'filled',
+        }
     },
     {
-        image: member2Img,
-        name: 'Full name',
-        title: 'Job title',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-    },
+        type: 'Partner with Us (for Bulk Safety Solutions)',
+        price: 'Request a quote',
+        description: 'Empower your customers with reliable vehicle safety at scale.',
+        features: [
+            'All Individual services',
+            'Customizable plans for large fleets',
+            'Seamless integration with existing services',
+            'Enhanced safety features for all users',
+            'Dedicated support for bulk orders',
+        ],
+        button: {
+            text: 'Contact Us',
+            type: 'outlined',
+        }
+    }
 ]
-
 
 export function HomePage() {
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
-            <section className="relative hero-gradient">
-                <div className="absolute inset-0 hero-gradient"></div>
-                <div className="absolute inset-0 z-10 flex justify-center items-center">
-                    <img src={backgroundGridHeaderImg} className='w-auto h-full  mx-auto object-cover' />
-                </div>
-                <div className="relative z-20 p-4 md:p-10 pt-24 md:pt-28 mx-auto grid justify-center justify-items-center gap-8 md:gap-12">
-                    <Badge text="6000+ Users | 100% Satisfaction Rate" />
+            <HeroBgSection grid>
+                <div className="grid justify-center justify-items-center gap-8 md:gap-12">
+                    <Badge text="10000+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
                         <h1 className="text-primary-darker text-6xl font-semibold tracking-tight leading-tight">
-                            In an emergency, <br /> help is one scan away
+                            {/* In an emergency, <br /> help is one scan away */}
+                            We are your only buddy <br /> at times of need in traffic!
                         </h1>
                         <p className="text-md text-dimmed mt-2 md:mt-4">
                             Whether your car is in trouble or passengers are at risk, ensure immediate contact with emergency
@@ -193,40 +174,14 @@ export function HomePage() {
                         </button>
                         <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
                     </div>
-                    <div className="max-w-[45rem] hidden md:flex mt-20 text-center flex-col gap-5">
-                        <span className="flex justify-center items-center gap-1">
-                            {
-                                Array(5).fill(0).map((_, i) => (<img key={i} src={starImg} alt="star" className='w-4' />))
-                            }
-                        </span>
-                        <p>
-                            “Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.”
-                        </p>
-                        <p className='text-sm text-dimmed'>
-                            — Rohan Desai
-                        </p>
-                    </div>
                 </div>
-            </section>
-            <div className="flex md:hidden mt-5 px-5 text-center flex-col gap-5">
-                <span className="flex justify-center items-center gap-1">
-                    {
-                        Array(5).fill(0).map((_, i) => (<img key={i} src={starImg} alt="star" className='w-4' />))
-                    }
-                </span>
-                <p>
-                    “Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.”
-                </p>
-                <p className='text-sm text-dimmed'>
-                    — Rohan Desai
-                </p>
-            </div>
-            <section className='w-full p-8 py-12 md:py-16 grid grid-flow-row-dense grid-cols-1 md:grid-cols-8 gap-20'>
+            </HeroBgSection>
+            <section className='relative w-full p-8 py-12 md:py-16 grid grid-flow-row-dense grid-cols-1 md:grid-cols-8 gap-20'>
                 <p className='hidden md:flex col-span-2 text-lg text-dimmed'>
                     Trusted by thousand
                     companies in the world
                 </p>
-                <div className='col-span-6 w-full -mr-20 overflow-hidden relative'>
+                <div className='col-span-6 w-screen overflow-hidden relative'>
                     <div className="w-full h-full absolute">
                         <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
                     </div>
@@ -241,7 +196,8 @@ export function HomePage() {
             </section>
             <GradientSection className='flex flex-col justify-center items-center gap-6'>
                 <Badge text="Our Services" />
-                <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1>
+                {/* <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1> */}
+                <h1 className='text-5xl font-semibold tracking-tight text-center'>Next generation of <br /> automotive safety evolution</h1>
                 <p className='text-md text-dimmed text-center'>We specialize in providing innovative QR sticker solutions designed to enhance <br /> safety and streamline communication for the automotive industry.</p>
             </GradientSection>
             <section className='overflow-hidden pt-0 md:pt-8 -mx-8 mb-12'>
@@ -260,42 +216,9 @@ export function HomePage() {
                     </div>
                 ))}
             </section>
-            <BorderSection wrapperClassName='pt-20' className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
-                <div className='w-full flex flex-col justify-between items-start text-center md:text-left'>
-                    <div className='w-full flex flex-col justify-between items-center md:items-start gap-8'>
-                        <Badge text="Why?" />
-                        <h1 className='text-5xl font-semibold tracking-tight text-start'>Why Choose <br /> Helptag 365?</h1>
-                        <button className="w-full sm:w-fit py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
-                            Get a FREE trial
-                        </button>
-                    </div>
-                    <p className='text-dimmed mt-10'>
-                        At Helptag 365, we specialize in providing innovative QR sticker solutions designed to enhance safety and streamline communication for the automotive industry.
-                        <br />
-                        <br />
-                        Our cutting-edge technology ensures that you can connect with car owners effortlessly, without compromising on privacy.
-                    </p>
-                </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 auto-rows-min md:auto-rows-fr gap-6'>
-                    {
-                        featureCards.map((feature, index) => <FeatureCard key={index} {...feature} />)
-                    }   
-                </div>
-            </BorderSection>
-            <FilledSection className='grid grid-cols-1 md:grid-flow-col grid-rows-2 gap-12 md:gap-2'>
-                <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center md:text-start'>Take control of <br /> your safety today!</h1>
-                <div className='mt-auto flex justify-center md:justify-start gap-2'>
-                    <button className="w-fit py-2 px-4 flex items-center gap-2 border rounded-xl bg-white border-white whitespace-nowrap cursor-pointer">
-                        <MoveUpRight className='w-4 h-auto' />
-                        Contact us
-                    </button>
-                    <button className="w-full sm:w-fit py-2 px-4 font-semibold border rounded-xl bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white cursor-pointer">
-                        Get a FREE trial
-                    </button>
-                </div>
-                <img src={QRImg} alt="QR code" className='row-span-2 w-56 h-auto mx-auto md:ml-auto' />
-            </FilledSection>
-            <BorderSection className='flex flex-col gap-12'>
+            <WhyChooseHelptag365 wrapperClassName='pt-20' />
+            <QRSection />
+            <BorderSection wrapperClassName='hidden md:block' className='flex flex-col gap-12'>
                 <div className='flex flex-col justify-between items-center gap-8'>
                     <Badge text="Process" />
                     <h1 className='text-4xl md:text-5xl font-semibold tracking-tight'>How It Works?</h1>
@@ -330,31 +253,41 @@ export function HomePage() {
                     </div>
                 </div>
             </GradientSection>
-            <BorderSection className='flex flex-col justify-center items-center gap-12 py-10'>
+            <BorderSection className='flex flex-col justify-between items-center gap-12'>
                 <div className='flex flex-col justify-between items-center gap-8'>
-                    <Badge text="Our team" />
-                    <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Meet the People Behind the Innovation</h1>
-                    <p className='text-dimmed text-center'>Led by visionaries like Harmeet Godhani, our team combines expertise in automotive technology, emergency response systems, and user-centric design. We&apos;re not just tech enthusiasts – we&apos;re committed to making a real difference in people&apos;s lives.</p>
+                    <Badge text="Pricing" />
+                    <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Stay Safe for Just ₹199/Year</h1>
+                    <p className='text-dimmed text-center'>Ensure peace of mind for you and your loved ones, no matter where the road takes you.</p>
                 </div>
-                <div className='flex flex-col md:flex-row justify-between items-center gap-12'>
+                <div className='w-fit grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-12'>
                     {
-                        teamCards.map((team, index) => <TeamCard key={index} {...team} />)
+                        pricingCards.map((pricing, index) => (
+                            <BorderSection key={index} wrapperClassName='max-w-md !p-0' className='!p-6 !rounded-3xl grid gap-6'>
+                                <div className='space-y-2'>
+                                    <p className='font-semibold'>{pricing.type}</p>
+                                    <h2 className='font-semibold text-3xl'>{pricing.price}</h2>
+                                    <p className='text-sm text-dimmed'>{pricing.description}</p>
+                                </div>
+                                <div className='space-y-3'>
+                                    {
+                                        pricing.features.map((feature, i) => (
+                                            <span key={i} className='flex'>
+                                                <img src={tickImg} alt="check" className='w-5 h-auto mr-2' />
+                                                <p className='text-sm font-medium'>{feature}</p>
+                                            </span>
+                                        ))
+                                    }
+                                </div>
+                                <button className={`full py-2 px-4 border rounded-xl ${pricing.button.type === 'filled' ? 'bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white' : 'border-primary-normal-hover text-primary-normal'} cursor-pointer`}>
+                                    {pricing.button.text}
+                                </button>
+                            </BorderSection>
+                        ))
                     }
                 </div>
             </BorderSection>
-            <FilledSection className='grid grid-cols-1 md:grid-flow-col grid-rows-2 gap-12 md:gap-2'>
-                <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center md:text-start'>Take control of <br /> your safety today!</h1>
-                <div className='mt-auto flex justify-center md:justify-start gap-2'>
-                    <button className="w-fit py-2 px-4 flex items-center gap-2 border rounded-xl bg-white border-white whitespace-nowrap cursor-pointer">
-                        <MoveUpRight className='w-4 h-auto' />
-                        Contact us
-                    </button>
-                    <button className="w-full sm:w-fit py-2 px-4 font-semibold border rounded-xl bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white cursor-pointer">
-                        Get a FREE trial
-                    </button>
-                </div>
-                <img src={QRImg} alt="QR code" className='row-span-2 w-56 h-auto mx-auto md:ml-auto' />
-            </FilledSection>
+            <OurTeam />
+            <QRSection />
         </main>
     )
 }

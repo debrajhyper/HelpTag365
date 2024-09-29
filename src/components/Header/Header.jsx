@@ -14,8 +14,8 @@ export function Header() {
         <>
             <nav className="fixed top-0 w-full h-fit px-5 sm:px-6 md:px-8 lg:px-10 xl:px-16 py-5 flex justify-between items-center flex-wrap z-50">
                 <Link to={HOME_PATH} className="px-2 md:px-3 py-3 md:py-3.5 flex gap-1 bg-white rounded-xl shadow border border-light-active">
-                    <img src={logoImg} alt="logo" className="h-3 md:h-3.5" />
-                    <img src={brandName} alt="brand name" className="h-3 md:h-3.5" />
+                    <img src={logoImg} alt="logo" className="h-3.5 md:h-4" />
+                    <img src={brandName} alt="brand name" className="h-3.5 md:h-4" />
                 </Link>
                 <div className='flex md:hidden'>
                     <button onClick={() => setMenuOpen(!menuOpen)} className='p-1.5 bg-white rounded-xl'>
