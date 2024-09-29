@@ -155,7 +155,7 @@ const pricingCards = [
 export function HomePage() {
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
-            <HeroBgSection grid>
+            <HeroBgSection>
                 <div className="grid justify-center justify-items-center gap-8 md:gap-12">
                     <Badge text="10000+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
