@@ -4,19 +4,115 @@
 
 @layer base {
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
+    font-weight: 100;
     font-style: normal;
-    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Thin.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Thin.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Thin.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Thin.ttf') format("truetype");
     font-display: swap;
-    src: url(/src/fonts/Poppins/poppins-regular-webfont.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraLight.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraLight.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraLight.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Light.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Regular.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Medium.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-SemiBold.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Bold.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.ttf') format("truetype");
+    font-display: swap;
   }
 }
 
 :root {
-  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
   color: #1b3154;
   background-color: #ffffff;
@@ -33,21 +129,17 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  /* min-height: 100vh; */
-  /* min-width: 100vw; */
-  /* overflow: hidden; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 @layer utilities {
   .pause {
     animation-play-state: paused;
   }
+
   .fade_left {
     background: linear-gradient(to right, #ffffffa8 0%, #ffffff00 100%);
   }
+
   .fade-right {
     background: linear-gradient(to left, #ffffffa8 0%, #ffffff00 100%);
   }
@@ -55,6 +147,7 @@ body {
 
 @layer components {
   .hero-gradient {
-    @apply w-full rounded-bl-[3.5rem] rounded-br-[3.5rem] bg-[radial-gradient(50%_50%_at_50%_50%,_#FFFFFF_0%,_#EDF4FE_100%)];
+    @apply w-full rounded-bl-[3.5rem] rounded-br-[3.5rem];
+    background-image: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EDF4FE 100%);
   }
 }

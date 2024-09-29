@@ -159,9 +159,9 @@ export function HomePage() {
                 <div className="grid justify-center justify-items-center gap-8 md:gap-12">
                     <Badge text="10000+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
-                        <h1 className="text-primary-darker text-6xl font-semibold tracking-tight leading-tight">
-                            {/* In an emergency, <br /> help is one scan away */}
-                            We are your only buddy <br /> at times of need in traffic!
+                        <h1 className="text-primary-darker text-7xl font-semibold tracking-tight leading-tight">
+                            In an emergency, <br /> help is one scan away
+                            {/* We are your only buddy <br /> at times of need in traffic! */}
                         </h1>
                         <p className="text-md text-dimmed mt-2 md:mt-4">
                             Whether your car is in trouble or passengers are at risk, ensure immediate contact with emergency
@@ -169,7 +169,7 @@ export function HomePage() {
                         </p>
                     </div>
                     <div className="text-center mb-14 md:mb-0">
-                        <button className="drop-shadow-md py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
+                        <button className="drop-shadow-md py-2 px-8 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
                             Get a FREE trial
                         </button>
                         <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
