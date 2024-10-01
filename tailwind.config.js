@@ -41,14 +41,19 @@ export default {
         dimmed: '#8492A9',
       },
       animation: {
-        'smooth-scroll': 'smoothScroll 30s linear infinite',
+        'smooth-scroll-mobile': 'smoothScrollMobile 8s linear infinite',
+        'smooth-scroll': 'smoothScrollDesktop 30s linear infinite',
         'smooth-scroll-reverse': 'smoothScrollReverse 30s linear infinite',
         'carousel-scroll': 'carouselScroll 100s linear infinite',
       },
       keyframes: {
-        smoothScroll: {
+        smoothScrollMobile: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        smoothScrollDesktop : {
           '0%': { transform: 'translateX(0)', },
-          '100%': { transform: 'translateX(-50%)', },
+          '100%': { transform: 'translateX(-100%)', },
         },
         smoothScrollReverse: {
           '0%': { transform: 'translateX(-50%)', },

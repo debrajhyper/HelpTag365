@@ -8,7 +8,7 @@ export const WhyChooseHelptag365 = ({...props}) => (
         <div className='w-full flex flex-col justify-between items-start text-center md:text-left'>
             <div className='w-full flex flex-col justify-between items-center md:items-start gap-8'>
                 <Badge text="Why?" />
-                <h1 className='text-5xl font-semibold tracking-tight text-start'>Why Choose <br /> Helptag 365?</h1>
+                <h1 className='text-3xl md:text-5xl font-semibold tracking-tight text-start'>Why Choose <br /> Helptag 365?</h1>
                 <button className="w-full sm:w-fit py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
                     Get a FREE trial
                 </button>

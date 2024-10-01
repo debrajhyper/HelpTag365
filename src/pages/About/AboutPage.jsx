@@ -9,7 +9,7 @@ export function AboutPage() {
                 <div className="grid justify-center justify-items-center gap-8 md:gap-12">
                     <Testimony />
                     <div className="max-w-full md:max-w-[52rem] text-center">
-                        <h1 className="text-primary-darker text-6xl font-semibold tracking-tight leading-tight">
+                        <h1 className="text-primary-darker text-5xl md:text-6xl font-semibold tracking-tight leading-tight">
                             About us
                         </h1>
                         <p className="text-md text-dimmed mt-2 md:mt-4">

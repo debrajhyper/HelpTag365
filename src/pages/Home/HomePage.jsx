@@ -159,7 +159,7 @@ export function HomePage() {
                 <div className="grid justify-center justify-items-center gap-8 md:gap-12">
                     <Badge text="10000+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
-                        <h1 className="text-primary-darker text-7xl font-semibold tracking-tight leading-tight">
+                        <h1 className="text-primary-darker text-4xl md:text-7xl font-semibold tracking-tight leading-tight">
                             In an emergency, <br /> help is one scan away
                             {/* We are your only buddy <br /> at times of need in traffic! */}
                         </h1>
@@ -185,7 +185,7 @@ export function HomePage() {
                     <div className="w-full h-full absolute">
                         <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
                     </div>
-                    <div className='flex justify-start items-center gap-14 animate-smooth-scroll opacity-80'>
+                    <div className='flex justify-start items-center gap-14 animate-smooth-scroll-mobile md:animate-smooth-scroll opacity-80'>
                         {
                             [...companiesImg, ...companiesImg].map((img, index) => (
                                 <img key={index} src={img} alt="company" className='w-auto h-fit object-contain' />
@@ -197,7 +197,7 @@ export function HomePage() {
             <GradientSection className='flex flex-col justify-center items-center gap-6'>
                 <Badge text="Our Services" />
                 {/* <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1> */}
-                <h1 className='text-5xl font-semibold tracking-tight text-center'>Next generation of <br /> automotive safety evolution</h1>
+                <h1 className='text-3xl md:text-5xl font-semibold tracking-tight text-center'>Next generation of <br /> automotive safety evolution</h1>
                 <p className='text-md text-dimmed text-center'>We specialize in providing innovative QR sticker solutions designed to enhance <br /> safety and streamline communication for the automotive industry.</p>
             </GradientSection>
             <section className='overflow-hidden pt-0 md:pt-8 -mx-8 mb-12'>

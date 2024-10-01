@@ -27,7 +27,7 @@ export function LoginPage() {
         console.log(loginFormData);
         setLoginFormData(defaultFormData);
     }
-    
+
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
             <HeroBgSection>
@@ -49,8 +49,8 @@ export function LoginPage() {
                             <div className='grid grid-cols-2 gap-x-4 gap-y-2 md:gap-y-4'>
                                 <Input wrapperClassName='col-span-2' label="Phone number" id="mobile" name="mobile" type="number" placeholder="+91" value={loginFormData.mobile} onChange={handleChange} />
                                 <Input wrapperClassName='col-span-2' label="Password" id="password" name="password" type="password" placeholder="Enter your password" value={loginFormData.password} onChange={handleChange} />
-                                <div className='col-span-2 flex justify-between'>
-                                    <Checkbox wrapperClassName='col-span-2' label="Remember me" id="rememberMe" name="rememberMe" isChecked={loginFormData.rememberMe} toggleCheckbox={handleCheckboxChange} />
+                                <div className='col-span-2 flex flex-col md:flex-row justify-between'>
+                                    <Checkbox wrapperClassName='col-span-2 mb-0 md:mb-2' label="Remember me" id="rememberMe" name="rememberMe" isChecked={loginFormData.rememberMe} toggleCheckbox={handleCheckboxChange} />
                                     <p className='font-medium cursor-pointer'>Forgot your password?</p>
                                 </div>
                             </div>
