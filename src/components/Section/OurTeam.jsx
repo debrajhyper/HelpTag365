@@ -10,7 +10,7 @@ export const OurTeam = () => (
             <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Meet the People Behind the Innovation</h1>
             <p className='text-dimmed text-center'>Led by visionaries like Harmeet Godhani, our team combines expertise in automotive technology, emergency response systems, and user-centric design. We&apos;re not just tech enthusiasts – we&apos;re committed to making a real difference in people&apos;s lives.</p>
         </div>
-        <div className='flex flex-col md:flex-row justify-between items-center gap-12'>
+        <div className='flex flex-col md:flex-row justify-between items-start gap-12'>
             {
                 teamCards.map((team, index) => <TeamCard key={index} {...team} />)
             }

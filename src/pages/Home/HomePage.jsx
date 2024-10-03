@@ -218,7 +218,7 @@ export function HomePage() {
             </section>
             <WhyChooseHelptag365 wrapperClassName='pt-20' />
             <QRSection />
-            <BorderSection wrapperClassName='hidden md:block' className='flex flex-col gap-12'>
+            <BorderSection className='flex flex-col gap-12'>
                 <div className='flex flex-col justify-between items-center gap-8'>
                     <Badge text="Process" />
                     <h1 className='text-4xl md:text-5xl font-semibold tracking-tight'>How It Works?</h1>
@@ -234,7 +234,7 @@ export function HomePage() {
                 <div className='px-4 flex flex-col justify-between items-center md:items-start gap-12'>
                     <Badge text='Reviews' />
                     <div className='flex flex-col justify-between items-start gap-6'>
-                        <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center md:text-start'>Our secure customers</h1>
+                        <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center md:text-start'>Customer feedback</h1>
                         <p className='text-dimmed text-center md:text-start'>At Helptag 365, we specialize in providing innovative QR sticker solutions designed to enhance safety and streamline communication for the automotive industry.</p>
                     </div>
                     <button className="w-full sm:w-fit py-2 px-4 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">

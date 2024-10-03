@@ -74,7 +74,7 @@ export function RegisterPage() {
                         <Testimony wrapperClassName='text-start' startClassName='!justify-start' />
                     </div>
                     <div className='col-span-1 md:col-span-3 lg:col-span-1 xl:px-8'>
-                        <ModularForm title="Register" description="Register and your help tag QR code." submitButtonName='Register' onSubmit={handleSubmit}>
+                        <ModularForm title="Register" description="Register and get your HelpTag QR code." submitButtonName='Register' onSubmit={handleSubmit}>
                             <div className='grid grid-cols-2 gap-x-4 gap-y-2 md:gap-y-4'>
                                 <Input wrapperClassName='col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-1' label="Full name" id="fullName" name="fullName" type="text" placeholder="Your full name" value={registerFormData.fullName} onChange={handleChange} />
                                 <Input wrapperClassName='col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-1' label="Phone number" id="mobile" name="mobile" type="number" placeholder="Enter your phone number" value={registerFormData.mobile} onChange={handleChange} />

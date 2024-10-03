@@ -4,11 +4,12 @@ import easyToUseImg from '../images/easyToUse.svg';
 import communicationImg from '../images/communication.svg';
 import member1Img from '../images/member1.svg';
 import member2Img from '../images/member2.svg';
+import member3Img from '../images/member3.svg';
 
 export const featureCards = [
     {
         image: communicationImg,
-        title: 'Seamless Communication',
+        title: 'Empowering Community',
         description: 'Our QR stickers allow for instant contact between car owners and concerned parties, ensuring quick and efficient communication.',
         rowSpan: 2,
     },
@@ -45,6 +46,12 @@ export const teamCards = [
         title: 'COO @HelpTag365',
         description: 'Turnaround specialist and customer favorite across industry. Leading all business transactions in HT365',
     },
+    {
+        image: member3Img,
+        name: 'Vijay Radadiya',
+        title: 'Co-founder and Mentor @HelpTag365',
+        description: 'Certified Master Trainer & Master Assessor |Career Counselor | Academician | Innovator | Social Change Leader'
+    }
 ]
 
 export const formOptions = {
