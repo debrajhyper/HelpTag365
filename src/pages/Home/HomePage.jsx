@@ -157,7 +157,7 @@ export function HomePage() {
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
             <HeroBgSection>
                 <div className="grid justify-center justify-items-center gap-8 md:gap-12">
-                    <Badge text="10000+ Users | 100% Satisfaction Rate" />
+                    <Badge text="100K+ Users | 100% Satisfaction Rate" />
                     <div className="max-w-full md:max-w-[52rem] text-center">
                         <h1 className="text-primary-darker text-4xl md:text-7xl font-semibold tracking-tight leading-tight">
                             In an emergency, <br /> help is one scan away
