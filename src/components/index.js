@@ -20,3 +20,4 @@ export { OurTeam } from './Section/OurTeam';
 export { Testimony } from './Section/Testimony';
 export { Select } from './Input/Select';
 export { WhyChooseHelptag365 } from './Section/WhyChooseHelptag365';
+export { ServiceBadge } from './Misc/ServiceBadge';

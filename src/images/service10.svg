@@ -1,0 +1,34 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_663_419)">
+        <mask id="mask0_663_419" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+            width="24" height="24">
+            <path d="M0 0H24V24H0V0Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_663_419)">
+            <path
+                d="M9 4.99988V3.99988C9 2.34288 10.343 0.999878 12 0.999878C13.657 0.999878 15 2.34288 15 3.99988V4.99988"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M14.002 10.9999H10.002" stroke="#3969B5" stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M19.002 13.9999C21.211 13.9999 23.002 15.7909 23.002 17.9999V18.9999C23.002 21.2089 21.211 22.9999 19.002 22.9999H5.00195C2.79295 22.9999 1.00195 21.2089 1.00195 18.9999V17.9999C1.00195 15.7909 2.79295 13.9999 5.00195 13.9999"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M15.0039 22.9999H9.00391C6.79491 22.9999 5.00391 21.2089 5.00391 18.9999V11.9999C5.00391 8.13388 8.13791 4.99988 12.0039 4.99988C15.8699 4.99988 19.0039 8.13388 19.0039 11.9999V18.9999C19.0039 21.2089 17.2129 22.9999 15.0039 22.9999Z"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M18.8278 19.481C17.6838 16.844 15.0578 15 12.0018 15C8.94478 15 6.31878 16.844 5.17578 19.481"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_663_419">
+            <rect width="24" height="24" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+    

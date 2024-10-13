@@ -1,5 +1,5 @@
 import starImg from '../../images/star.svg';
-import { Badge, BorderSection, GradientSection, ProcessCard, ReviewCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365 } from '../../components';
+import { Badge, BorderSection, GradientSection, ProcessCard, ReviewCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge } from '../../components';
 import processQRImg from '../../images/processQR.svg';
 import processScanImg from '../../images/processScan.svg';
 import processConnectImg from '../../images/processConnect.svg';
@@ -12,13 +12,131 @@ import company6Img from '../../images/company6.svg';
 import company7Img from '../../images/company7.svg';
 import profilePicImg from '../../images/profilePic.svg';
 import tickImg from '../../images/tick.svg';
+import service1Img from '../../images/service1.svg';
+import service2Img from '../../images/service2.svg';
+import service3Img from '../../images/service3.svg';
+import service4Img from '../../images/service4.svg';
+import service5Img from '../../images/service5.svg';
+import service6Img from '../../images/service6.svg';
+import service7Img from '../../images/service7.svg';
+import service8Img from '../../images/service8.svg';
+import service9Img from '../../images/service9.svg';
+import service10Img from '../../images/service10.svg';
+import service11Img from '../../images/service11.svg';
+import service12Img from '../../images/service12.svg';
+import service13Img from '../../images/service13.svg';
+import service14Img from '../../images/service14.svg';
+import service15Img from '../../images/service15.svg';
+import service16Img from '../../images/service16.svg';
+import service17Img from '../../images/service17.svg';
+import service18Img from '../../images/service18.svg';
+import service19Img from '../../images/service19.svg';
+import service20Img from '../../images/service20.svg';
+import service21Img from '../../images/service21.svg';
+import service22Img from '../../images/service22.svg';
+import service23Img from '../../images/service23.svg';
 
 const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img, company7Img]
 
+// const services = [
+//     ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
+//     ['Pet inside vehicle', 'Child inside vehicle', '⁠Elderly inside vehicle', 'Driver of vehicle is in trouble', 'Vehicle is stolen/misplaced', 'Vehicle fuel empty', 'vehicle on fire'],
+//     ['Vehicle needs tyre repair', 'Vehicle windows open', 'Driver misbehaving with passenger', 'Driver driving dangerously', 'Driver taking unsafe route', 'Driver keeping car dirty']
+// ]
+
 const services = [
-    ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
-    ['Pet inside vehicle', 'Child inside vehicle', '⁠Elderly inside vehicle', 'Driver of vehicle is in trouble', 'Vehicle is stolen/misplaced', 'Vehicle fuel empty', 'vehicle on fire'],
-    ['Vehicle needs tyre repair', 'Vehicle windows open', 'Driver misbehaving with passenger', 'Driver driving dangerously', 'Driver taking unsafe route', 'Driver keeping car dirty']
+    {
+        image: service1Img,
+        title: 'Lights are on',
+    },
+    {
+        image: service2Img,
+        title: 'Vehicle is on',
+    },
+    {
+        image: service3Img,
+        title: 'Vehicle alarm is ringing',
+    },
+    {
+        image: service4Img,
+        title: 'Vehicle in no parking',
+    },
+    {
+        image: service5Img,
+        title: 'Vehicle wrongly parked',
+    },
+    {
+        image: service6Img,
+        title: 'Vehicle had accident',
+    },
+    {
+        image: service7Img,
+        title: 'Vehicle broke down',
+    },
+    {
+        image: service8Img,
+        title: 'Vehicle is impounded',
+    },
+    {
+        image: service9Img,
+        title: 'Pet inside vehicle',
+    },
+    {
+        image: service10Img,
+        title: 'Child inside vehicle',
+    },
+    {
+        image: service11Img,
+        title: 'Elderly inside vehicle',
+    },
+    {
+        image: service12Img,
+        title: 'Driver of vehicle is in trouble',
+    },
+    {
+        image: service13Img,
+        title: 'Vehicle is stolen/misplaced',
+    },
+    {
+        image: service14Img,
+        title: 'Vehicle fuel empty',
+    },
+    {
+        image: service15Img,
+        title: 'Vehicle on fire',
+    },
+    {
+        image: service16Img,
+        title: 'Vehicle needs towing',
+    },
+    {
+        image: service17Img,
+        title: 'Vehicle needs tyre repair',
+    },
+    {
+        image: service18Img,
+        title: 'Vehicle windows open',
+    },
+    {
+        image: service19Img,
+        title: 'Driver misbehaving with passenger',
+    },
+    {
+        image: service20Img,
+        title: 'Driver driving dangerously',
+    },
+    {
+        image: service21Img,
+        title: 'Driver taking unsafe route',
+    },
+    {
+        image: service22Img,
+        title: 'Driver keeping car dirty',
+    },
+    {
+        image: service23Img,
+        title: 'Driver not moving',
+    }
 ]
 
 const processCards = [
@@ -156,32 +274,31 @@ export function HomePage() {
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
             <HeroBgSection>
-                <div className="grid justify-center justify-items-center gap-8 md:gap-12">
-                    <Badge text="100K+ Users | 100% Satisfaction Rate" />
-                    <div className="max-w-full md:max-w-[52rem] text-center">
-                        <h1 className="text-primary-darker text-4xl md:text-7xl font-semibold tracking-tight leading-tight">
-                            In an emergency, <br /> help is one scan away
+                <div className="grid justify-center justify-items-center gap-8 md:gap-20">
+                    <div className="max-w-full md:max-w-[52rem] text-center space-y-6">
+                        <Badge text="10K+ Users | 100% Satisfaction" className='mx-auto' />
+                        <h1 className="text-primary-darker text-5xl md:text-7xl font-semibold tracking-tight !leading-tight">
+                            In an Emergency, <br /> Help is One Scan Away
                             {/* We are your only buddy <br /> at times of need in traffic! */}
                         </h1>
-                        <p className="text-md text-dimmed mt-2 md:mt-4">
+                        <p className="text-xl md:text-md text-dimmed mt-2 md:mt-4">
                             Whether your car is in trouble or passengers are at risk, ensure immediate contact with emergency
                             services, family, or roadside assistance—all just one scan away.
                         </p>
                     </div>
-                    <div className="text-center mb-14 md:mb-0">
-                        <button className="drop-shadow-md py-2 px-8 border-2 rounded-xl bg-white hover:bg-primary-normal-hover border-primary-normal-hover text-primary-normal-hover hover:text-white cursor-pointer">
+                    <div className="text-center mb-0 w-full">
+                        <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 border-2 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
                             Get a FREE trial
                         </button>
                         <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
                     </div>
                 </div>
             </HeroBgSection>
-            <section className='relative w-full p-8 py-12 md:py-16 grid grid-flow-row-dense grid-cols-1 md:grid-cols-8 gap-20'>
-                <p className='hidden md:flex col-span-2 text-lg text-dimmed'>
-                    Trusted by thousand
-                    companies in the world
+            <section className='relative w-full p-4 md:p-8 py-16 md:py-12 grid grid-flow-row-dense grid-cols-3 md:grid-cols-11 gap-0'>
+                <p className='flex col-span-1 md:col-span-2 text-lg text-dimmed items-center whitespace-nowrap'>
+                    Featured on
                 </p>
-                <div className='col-span-6 w-screen overflow-hidden relative'>
+                <div className='col-span-2 md:col-span-9 w-screen overflow-hidden relative'>
                     <div className="w-full h-full absolute">
                         <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
                     </div>
@@ -197,11 +314,11 @@ export function HomePage() {
             <GradientSection className='flex flex-col justify-center items-center gap-6'>
                 <Badge text="Our Services" />
                 {/* <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1> */}
-                <h1 className='text-3xl md:text-5xl font-semibold tracking-tight text-center'>Next generation of <br /> automotive safety evolution</h1>
-                <p className='text-md text-dimmed text-center'>We specialize in providing innovative QR sticker solutions designed to enhance <br /> safety and streamline communication for the automotive industry.</p>
+                <h1 className='text-3xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Proprietary Next <br /> Generation Intelligent</h1>
+                <p className='text-md font-normal text-dimmed text-center'>We’re all in one solution buddy in traffic whenever, wherever you need! Help is just a scan away.</p>
             </GradientSection>
-            <section className='overflow-hidden pt-0 md:pt-8 -mx-8 mb-12'>
-                {services.map((service, index) => (
+            <section className='w-screen overflow-hidden relative pt-0 md:pt-0 mb-0 md:mb-12'>
+                {/* {services.map((service, index) => (
                     <div key={index} className="w-full mb-5 overflow-hidden">
                         <div className={`inline-flex gap-5 whitespace-nowrap ${index % 2 === 0 ? 'animate-smooth-scroll' : 'animate-smooth-scroll-reverse'} hover:pause`}>
                             {[...service, ...service].map((item, itemIndex) => (
@@ -214,7 +331,17 @@ export function HomePage() {
                             ))}
                         </div>
                     </div>
-                ))}
+                ))} */}
+                <div className="w-full h-full absolute">
+                    <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
+                </div>
+                <div className='flex justify-start items-center gap-6 animate-smooth-scroll-mobile md:animate-smooth-scroll'>
+                    {
+                        services.map((service, index) => (
+                            <ServiceBadge key={index} {...service} />
+                        ))
+                    }
+                </div>
             </section>
             <WhyChooseHelptag365 wrapperClassName='pt-20' />
             <QRSection />

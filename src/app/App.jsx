@@ -18,7 +18,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className='relative h-full w-full grid place-items-center items-start'>
+    <div className="relative h-full w-full grid place-items-center items-start font-['Poppins']">
       <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
       <Routes>
         <Route path={HOME_PATH} element={<HomePage />} />

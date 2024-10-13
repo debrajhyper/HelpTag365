@@ -1,8 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   @font-face {
     font-family: 'Poppins';
     font-weight: 100;
@@ -110,7 +111,7 @@
       url('https://cdn.jsdelivr.net/gh/webfontworld/Poppins/Poppins-Black.ttf') format("truetype");
     font-display: swap;
   }
-}
+} */
 
 :root {
   color-scheme: light dark;
@@ -129,6 +130,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 @layer utilities {

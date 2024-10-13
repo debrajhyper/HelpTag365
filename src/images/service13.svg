@@ -1,0 +1,36 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_663_443)">
+        <mask id="mask0_663_443" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+            width="24" height="24">
+            <path d="M0 0H24V24H0V0Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_663_443)">
+            <path
+                d="M19.0039 9.423C19.0039 1.423 15.0039 1 15.0039 1C15.0039 1 14.0709 1 13.1609 1.638C12.4669 2.123 11.5409 2.123 10.8469 1.638C9.93691 1 9.00391 1 9.00391 1C9.00391 1 5.00391 1.423 5.00391 9.423C5.00391 9.423 7.00391 11 12.0039 11C17.0039 11 19.0039 9.423 19.0039 9.423Z"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M7.50391 18.0002C8.88491 18.0002 10.0039 19.1192 10.0039 20.5002C10.0039 21.8812 8.88491 23.0002 7.50391 23.0002C6.12291 23.0002 5.00391 21.8812 5.00391 20.5002C5.00391 19.1192 6.12291 18.0002 7.50391 18.0002Z"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M19.0039 20.5002C19.0039 21.8812 17.8849 23.0002 16.5039 23.0002C15.1229 23.0002 14.0039 21.8812 14.0039 20.5002C14.0039 19.1192 15.1229 18.0002 16.5039 18.0002C17.8849 18.0002 19.0039 19.1192 19.0039 20.5002Z"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M10.002 20.5002C10.002 20.5002 11.002 20.0002 12.002 20.0002C13.002 20.0002 14.002 20.5002 14.002 20.5002"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M19.002 9.423C20.665 9.842 23.002 10.984 23.002 12C23.002 14.5 18.077 15 12.002 15C5.92695 15 1.00195 14.5 1.00195 12C1.00195 10.984 3.33795 9.842 5.00195 9.423"
+                stroke="#3969B5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_663_443">
+            <rect width="24" height="24" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+    
