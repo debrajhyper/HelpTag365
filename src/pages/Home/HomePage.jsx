@@ -143,21 +143,24 @@ const processCards = [
     {
         image: processQRImg,
         imageHeight: 36,
-        title: 'Step 01 - Attach',
+        // title: 'Step 01 - Attach',
+        title: '01 / Attach',  
         subTitle: 'Place the QR sticker on your vehicle.',
     },
     {
         image: processScanImg,
         imageHeight: 206,
         imgPosition: 'bottom',
-        title: 'Step 02 - Scan',
+        // title: 'Step 02 - Scan',
+        title: '02 / Scan',
         subTitle: 'Anyone needing to contact you can scan the QR code with their smartphone.',
     },
     {
         image: processConnectImg,
         imageHeight: 206,
         imgPosition: 'top',
-        title: 'Step 03 - Connect',
+        // title: 'Step 03 - Connect',
+        title: '03 / Connect',
         subTitle: 'The scanner is directed to a secure platform where they can leave a message or get in touch without accessing your personal details.',
     }
 ]
@@ -311,7 +314,7 @@ export function HomePage() {
                     </div>
                 </div>
             </section>
-            <GradientSection className='flex flex-col justify-center items-center gap-6'>
+            <GradientSection wrapperClassName='!py-0' className='flex flex-col justify-center items-center gap-6'>
                 <Badge text="Our Services" />
                 {/* <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1> */}
                 <h1 className='text-3xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Proprietary Next <br /> Generation Intelligent</h1>
@@ -345,7 +348,7 @@ export function HomePage() {
             </section>
             <WhyChooseHelptag365 wrapperClassName='pt-20' />
             <QRSection />
-            <BorderSection className='flex flex-col gap-12'>
+            {/* <BorderSection className='flex flex-col gap-12'>
                 <div className='flex flex-col justify-between items-center gap-8'>
                     <Badge text="Process" />
                     <h1 className='text-4xl md:text-5xl font-semibold tracking-tight'>How It Works?</h1>
@@ -356,7 +359,24 @@ export function HomePage() {
                         processCards.map((process, index) => <ProcessCard key={index} {...process} />)
                     }
                 </div>
-            </BorderSection>
+            </BorderSection> */}
+            <GradientSection className='!px-0 !py-0'>
+                <div className='px-4 md:p-16 py-12 md:py-16 space-y-12 text-center pb-12 md:pb-16'>
+                    <div className='flex flex-col justify-center items-center gap-6'>
+                        <Badge text='How it works' />
+                        <h2 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Truly Simple and <br />Super Easy Process</h2>
+                        <p className='text-md font-normal text-dimmed'>Simple steps to activate your vehicle safety system.</p>
+                    </div>
+                    <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 border-2 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
+                        Get a FREE trial
+                    </button>
+                </div>
+                <div className='px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+                    {
+                        processCards.map((process, index) => <ProcessCard key={index} {...process} />)
+                    }
+                </div>
+            </GradientSection>
             <GradientSection className='flex flex-col md:flex-row justify-between items-center gap-12 my-10'>
                 <div className='px-4 flex flex-col justify-between items-center md:items-start gap-12'>
                     <Badge text='Reviews' />
