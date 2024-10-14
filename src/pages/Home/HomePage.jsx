@@ -276,7 +276,7 @@ export function HomePage() {
             <HeroBgSection>
                 <div className="grid justify-center justify-items-center gap-8 md:gap-20">
                     <div className="max-w-full md:max-w-[52rem] text-center space-y-6">
-                        <Badge text="10K+ Users | 100% Satisfaction" className='mx-auto' />
+                        <Badge text="10K+ Users | 100% Satisfaction" wrapperClassName='mx-auto !border-primary-light-hover' textClassName='!text-primary-dark !normal-case' />
                         <h1 className="text-primary-darker text-5xl md:text-7xl font-semibold tracking-tight !leading-tight">
                             In an Emergency, <br /> Help is One Scan Away
                             {/* We are your only buddy <br /> at times of need in traffic! */}
@@ -317,7 +317,7 @@ export function HomePage() {
                 <h1 className='text-3xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Proprietary Next <br /> Generation Intelligent</h1>
                 <p className='text-md font-normal text-dimmed text-center'>We’re all in one solution buddy in traffic whenever, wherever you need! Help is just a scan away.</p>
             </GradientSection>
-            <section className='w-screen overflow-hidden relative pt-0 md:pt-0 mb-0 md:mb-12'>
+            <section className="w-screen 'overflow-hidden' relative pt-0 md:pt-0 mb-0 md:mb-12">
                 {/* {services.map((service, index) => (
                     <div key={index} className="w-full mb-5 overflow-hidden">
                         <div className={`inline-flex gap-5 whitespace-nowrap ${index % 2 === 0 ? 'animate-smooth-scroll' : 'animate-smooth-scroll-reverse'} hover:pause`}>
@@ -332,9 +332,9 @@ export function HomePage() {
                         </div>
                     </div>
                 ))} */}
-                <div className="w-full h-full absolute">
+                {/* <div className="w-full h-full absolute">
                     <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
-                </div>
+                </div> */}
                 <div className='flex justify-start items-center gap-6 animate-smooth-scroll-mobile md:animate-smooth-scroll'>
                     {
                         services.map((service, index) => (

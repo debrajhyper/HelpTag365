@@ -14,6 +14,12 @@ export const featureCards = [
         rowSpan: 2,
     },
     {
+        image: easyToUseImg,
+        title: 'Easy to Use',
+        description: 'Simply scan the QR code to access essential information and connect with the car owner.',
+        rowSpan: 1,
+    },
+    {
         image: privacyImg,
         title: 'Privacy Protection',
         description: 'We prioritize your privacy. Our solutions enable contact without revealing sensitive personal information.',
@@ -24,12 +30,6 @@ export const featureCards = [
         title: 'Enhanced Safety',
         description: 'Our stickers are designed to improve safety by providing a reliable way to communicate in case of emergencies or incidents.',
         rowSpan: 2,
-    },
-    {
-        image: easyToUseImg,
-        title: 'Easy to Use',
-        description: 'Simply scan the QR code to access essential information and connect with the car owner.',
-        rowSpan: 1,
     },
 ]
 

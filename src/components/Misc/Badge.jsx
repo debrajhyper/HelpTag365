@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 
-export const Badge = ({ text, className }) => (
-    <div className={`px-4 py-2 w-fit rounded-full border-2 border-primary-light-hover bg-white ${className}`}>
-        <p className="text-xs font-semibold text-primary-dark">{text}</p>
+export const Badge = ({ text, wrapperClassName, textClassName }) => (
+    <div className={`px-4 py-2 w-fit rounded-full border-2 border-primary-light bg-white ${wrapperClassName}`}>
+        <p className={`text-xs font-[500] text-primary-normal uppercase ${textClassName}`}>{text}</p>
     </div>
 )
 
 
 Badge.propTypes = {
     text: PropTypes.string,
-    className: PropTypes.string
+    wrapperClassName: PropTypes.string,
+    textClassName: PropTypes.string
 }
