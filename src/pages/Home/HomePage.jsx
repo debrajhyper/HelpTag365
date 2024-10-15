@@ -36,7 +36,7 @@ import service21Img from '../../images/service21.svg';
 import service22Img from '../../images/service22.svg';
 import service23Img from '../../images/service23.svg';
 
-const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img, company7Img]
+const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img]
 
 // const services = [
 //     ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
@@ -290,7 +290,7 @@ export function HomePage() {
                         </p>
                     </div>
                     <div className="text-center mb-0 w-full">
-                        <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 border-2 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
+                        <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
                             Get a FREE trial
                         </button>
                         <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
@@ -367,7 +367,7 @@ export function HomePage() {
                         <h2 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Truly Simple and <br />Super Easy Process</h2>
                         <p className='text-md font-normal text-dimmed'>Simple steps to activate your vehicle safety system.</p>
                     </div>
-                    <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 border-2 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
+                    <button className="w-full sm:w-fit py-2 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
                         Get a FREE trial
                     </button>
                 </div>
