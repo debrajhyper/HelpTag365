@@ -1,5 +1,5 @@
 import starImg from '../../images/star.svg';
-import { Badge, BorderSection, GradientSection, ProcessCard, ReviewCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge } from '../../components';
+import { Badge, BorderSection, GradientSection, ProcessCard, ReviewCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge, TrialButton } from '../../components';
 import processQRImg from '../../images/processQR.svg';
 import processScanImg from '../../images/processScan.svg';
 import processConnectImg from '../../images/processConnect.svg';
@@ -144,7 +144,7 @@ const processCards = [
         image: processQRImg,
         imageHeight: 36,
         // title: 'Step 01 - Attach',
-        title: '01 / Attach',  
+        title: '01 / Attach',
         subTitle: 'Place the QR sticker on your vehicle.',
     },
     {
@@ -241,7 +241,8 @@ const reviewCards = [
 const pricingCards = [
     {
         type: 'For Individual',
-        price: '₹199/Year',
+        price: '₹199',
+        per: '/Year',
         description: 'Ensure peace of mind for you and your loved ones, no matter where the road takes you.',
         features: [
             '24/7 emergency assistance',
@@ -256,7 +257,8 @@ const pricingCards = [
         }
     },
     {
-        type: 'Partner with Us (for Bulk Safety Solutions)',
+        type: 'Partner with Us',
+        typeDesc: '(for Bulk Safety Solutions)',
         price: 'Request a quote',
         description: 'Empower your customers with reliable vehicle safety at scale.',
         features: [
@@ -284,16 +286,17 @@ export function HomePage() {
                             In an Emergency, <br /> Help is One Scan Away
                             {/* We are your only buddy <br /> at times of need in traffic! */}
                         </h1>
-                        <p className="text-xl md:text-md text-dimmed mt-2 md:mt-4">
+                        <p className="text-md font-medium text-dimmed mt-2 md:mt-4">
                             Whether your car is in trouble or passengers are at risk, ensure immediate contact with emergency
                             services, family, or roadside assistance—all just one scan away.
                         </p>
                     </div>
                     <div className="text-center mb-0 w-full">
-                        <button className="w-full sm:w-fit drop-shadow-md py-2 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
+                        {/* <button className="w-full sm:w-fit 'drop-shadow-md' py-3 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
                             Get a FREE trial
-                        </button>
-                        <p className="text-xs text-dimmed mt-5">365 Days  |  No credit card require!</p>
+                        </button> */}
+                        <TrialButton />
+                        <p className="text-sm text-dimmed mt-5">365 Days  |  No credit card require!</p>
                     </div>
                 </div>
             </HeroBgSection>
@@ -307,7 +310,7 @@ export function HomePage() {
                     </div>
                     <div className='flex justify-start items-center gap-14 animate-smooth-scroll-mobile md:animate-smooth-scroll opacity-80'>
                         {
-                            [...companiesImg, ...companiesImg].map((img, index) => (
+                            [...companiesImg, ...companiesImg, ...companiesImg, ...companiesImg].map((img, index) => (
                                 <img key={index} src={img} alt="company" className='w-auto h-fit object-contain' />
                             ))
                         }
@@ -318,9 +321,9 @@ export function HomePage() {
                 <Badge text="Our Services" />
                 {/* <h1 className='text-5xl font-semibold tracking-tight text-center'>Revolutionizing Automotive <br /> Safety and Communication</h1> */}
                 <h1 className='text-3xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Proprietary Next <br /> Generation Intelligent</h1>
-                <p className='text-md font-normal text-dimmed text-center'>We’re all in one solution buddy in traffic whenever, wherever you need! Help is just a scan away.</p>
+                <p className='text-md font-medium text-dimmed text-center'>We’re all in one solution buddy in traffic whenever, wherever you need! Help is just a scan away.</p>
             </GradientSection>
-            <section className="w-screen 'overflow-hidden' relative pt-0 md:pt-0 mb-0 md:mb-12">
+            <section className=" overflow-hidden relative pt-0 md:pt-0 mb-0 md:mb-12">
                 {/* {services.map((service, index) => (
                     <div key={index} className="w-full mb-5 overflow-hidden">
                         <div className={`inline-flex gap-5 whitespace-nowrap ${index % 2 === 0 ? 'animate-smooth-scroll' : 'animate-smooth-scroll-reverse'} hover:pause`}>
@@ -335,9 +338,10 @@ export function HomePage() {
                         </div>
                     </div>
                 ))} */}
-                {/* <div className="w-full h-full absolute">
-                    <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
-                </div> */}
+                <div className="w-full h-full absolute">
+                    <div className="w-1/12 md:w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffff 0%, #ffffff00 100%)' }}></div>
+                    <div className="w-1/12 md:w-1/6 h-full absolute z-10 right-0" style={{ background: 'linear-gradient(to left, #ffffffff 0%, #ffffff00 100%)' }}></div>
+                </div>
                 <div className='flex justify-start items-center gap-6 animate-smooth-scroll-mobile md:animate-smooth-scroll'>
                     {
                         services.map((service, index) => (
@@ -365,11 +369,12 @@ export function HomePage() {
                     <div className='flex flex-col justify-center items-center gap-6'>
                         <Badge text='How it works' />
                         <h2 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Truly Simple and <br />Super Easy Process</h2>
-                        <p className='text-md font-normal text-dimmed'>Simple steps to activate your vehicle safety system.</p>
+                        <p className='text-md font-medium text-dimmed'>Simple steps to activate your vehicle safety system.</p>
                     </div>
-                    <button className="w-full sm:w-fit py-2 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
+                    {/* <button className="w-full sm:w-fit py-2 px-8 rounded-xl bg-primary-normal hover:bg-primary-normal-hover text-white cursor-pointer">
                         Get a FREE trial
-                    </button>
+                    </button> */}
+                    <TrialButton />
                 </div>
                 <div className='px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {
@@ -377,7 +382,7 @@ export function HomePage() {
                     }
                 </div>
             </GradientSection>
-            <GradientSection className='flex flex-col md:flex-row justify-between items-center gap-12 my-10'>
+            {/* <GradientSection className='flex flex-col md:flex-row justify-between items-center gap-12 my-10'>
                 <div className='px-4 flex flex-col justify-between items-center md:items-start gap-12'>
                     <Badge text='Reviews' />
                     <div className='flex flex-col justify-between items-start gap-6'>
@@ -399,21 +404,33 @@ export function HomePage() {
                         }
                     </div>
                 </div>
-            </GradientSection>
-            <BorderSection className='flex flex-col justify-between items-center gap-12'>
+            </GradientSection> */}
+            <BorderSection className='!p-0.5 bg-gradient-to-b from-primary-light-active  to-transparent border-none'>
+                <div className='bg-white rounded-[1.9rem] md:rounded-[3.3rem] p-0'>
+                    <div className='w-full px-2 md:px-16 py-12 md:py-16 flex flex-col justify-between items-center gap-12 text-center'>
+                        <Badge text='Reviews' />
+                        <div className='flex flex-col justify-between items-center gap-6'>
+                            <h1 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Thousands of Customers <br />are Happy with HelpTag365</h1>
+                            <p className='max-w-5xl text-md font-medium text-dimmed'>At Helptag 365, we specialize in providing innovative QR sticker solutions designed to enhance safety and streamline communication for the automotive industry.</p>
+                        </div>
+                        <TrialButton />
+                    </div>
+                </div>
+            </BorderSection>
+            <GradientSection className='flex flex-col justify-between items-center gap-12'>
                 <div className='flex flex-col justify-between items-center gap-8'>
                     <Badge text="Pricing" />
-                    <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Stay Safe for Just ₹199/Year</h1>
-                    <p className='text-dimmed text-center'>Ensure peace of mind for you and your loved ones, no matter where the road takes you.</p>
+                    <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Stay Safe for Just ₹199<span className='text-3xl font-medium'>/Year</span></h1>
+                    <p className='text-md font-medium text-dimmed text-center'>Ensure peace of mind for you and your loved ones, no matter where the road takes you.</p>
                 </div>
                 <div className='w-fit grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-12'>
                     {
                         pricingCards.map((pricing, index) => (
-                            <BorderSection key={index} wrapperClassName='max-w-md !p-0' className='!p-6 !rounded-3xl grid gap-6'>
+                            <BorderSection key={index} wrapperClassName='max-w-md !p-0' className={`!p-6 !rounded-3xl grid gap-6 ${index === 0 ? 'border-primary-normal' : ''}`}>
                                 <div className='space-y-2'>
-                                    <p className='font-semibold'>{pricing.type}</p>
-                                    <h2 className='font-semibold text-3xl'>{pricing.price}</h2>
-                                    <p className='text-sm text-dimmed'>{pricing.description}</p>
+                                    <p className='text-dimmed text-md font-medium'>{pricing.type}<span className='text-xs font-medium'>{pricing?.typeDesc}</span></p>
+                                    <h2 className='font-semibold text-3xl'>{pricing.price}<span className='text-sm font-medium'>{pricing?.per}</span></h2>
+                                    <p className='text-md font-medium text-dimmed'>{pricing.description}</p>
                                 </div>
                                 <div className='space-y-3'>
                                     {
@@ -425,14 +442,14 @@ export function HomePage() {
                                         ))
                                     }
                                 </div>
-                                <button className={`full py-2 px-4 border rounded-xl ${pricing.button.type === 'filled' ? 'bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white' : 'border-primary-normal-hover text-primary-normal'} cursor-pointer`}>
+                                <button className={`full py-2 px-4 border rounded-xl text-md font-medium ${pricing.button.type === 'filled' ? 'bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white' : 'border-primary-normal-hover text-primary-normal'} cursor-pointer`}>
                                     {pricing.button.text}
                                 </button>
                             </BorderSection>
                         ))
                     }
                 </div>
-            </BorderSection>
+            </GradientSection>
             <OurTeam />
             <QRSection />
         </main>

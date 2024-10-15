@@ -31,7 +31,7 @@ export const WhyChooseHelptag365 = ({ ...props }) => (
             <div className='w-full px-2 md:px-16 py-12 md:py-16 flex flex-col justify-between items-center gap-6 text-center'>
                 <Badge text="Who we are" />
                 <h1 className='text-5xl md:text-5xl font-semibold tracking-tight !leading-tight'>Why Choose <br /> HelpTag 365?</h1>
-                <p className='text-xl text-dimmed'>
+                <p className='max-w-5xl text-md font-medium text-dimmed'>
                     We are the world’s only QR coded vehicle tag provider that is designed to help resolve any road traffic concerns. Our tags are your second set of eyes watching your vehicle and its occupants; or alert if your prized possession needs attention.
                 </p>
             </div>

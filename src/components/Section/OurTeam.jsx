@@ -4,16 +4,18 @@ import { teamCards } from '../../constants';
 import { BorderSection } from '../HOC/BorderSection';
 
 export const OurTeam = () => (
-    <BorderSection className='flex flex-col justify-center items-center gap-12 py-10'>
-        <div className='flex flex-col justify-between items-center gap-8'>
-            <Badge text="Our team" />
-            <h1 className='text-4xl md:text-5xl font-semibold tracking-tight text-center'>Meet the People Behind the Innovation</h1>
-            <p className='text-dimmed text-center'>Led by visionaries like Harmeet Godhani, our team combines expertise in automotive technology, emergency response systems, and user-centric design. We&apos;re not just tech enthusiasts – we&apos;re committed to making a real difference in people&apos;s lives.</p>
-        </div>
-        <div className='flex flex-col md:flex-row justify-between items-start gap-12'>
-            {
-                teamCards.map((team, index) => <TeamCard key={index} {...team} />)
-            }
+    <BorderSection className='!p-0.5 bg-gradient-to-b from-primary-light-active  to-transparent border-none'>
+        <div className='bg-white rounded-[1.9rem] md:rounded-[3.3rem] w-full px-2 md:px-16 py-12 md:py-16 flex flex-col justify-between items-center gap-12 text-center'>
+            <div className='flex flex-col justify-between items-center gap-8'>
+                <Badge text="Our team" />
+                <h1 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Meet the People <br />Behind the Innovation</h1>
+                <p className='max-w-[65rem] text-md font-medium text-dimmed text-center'>Led by visionaries like <a className='font-semibold text-primary-dark'>Harmeet Godhani</a>, our team combines expertise in automotive technology, emergency response systems, and user-centric design. We&apos;re not just tech enthusiasts – we&apos;re committed to making a real difference in people&apos;s lives.</p>
+            </div>
+            <div className='flex flex-col md:flex-row justify-between items-start gap-12'>
+                {
+                    teamCards.map((team, index) => <TeamCard key={index} {...team} />)
+                }
+            </div>
         </div>
     </BorderSection>
 )

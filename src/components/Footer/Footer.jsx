@@ -24,8 +24,8 @@ const footerLinks = {
 }
 
 export const Footer = () => (
-    <footer className="w-full mt-10 pt-4 md:pt-8 px-4 md:px-8 bg-primary-light rounded-t-[2rem] md:rounded-t-[3.5rem]">
-        <div className="bg-white p-6 md:p-16 pt-16 pb-2 md:pb-8 divide-y rounded-t-2xl md:rounded-t-3xl">
+    <footer className="w-full mt-10 pt-4 md:pt-8 'px-4 md:px-8 bg-primary-light' rounded-t-[2rem] md:rounded-t-[3.5rem]">
+        <div className="bg-white p-4 md:p-8 pt-16 pb-2 md:pb-8 divide-y rounded-t-2xl md:rounded-t-3xl">
             <div className="pb-8 grid grid-cols-1 md:grid-cols-2  gap-16 md:gap-8 xl:gap-20">
                 <div className='max-w-[34rem] space-y-8'>
                     <Link to={HOME_PATH} className="flex gap-1">

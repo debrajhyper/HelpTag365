@@ -14,7 +14,7 @@ export const FeatureCard = ({ image, title, description, rowSpan = 2 }) => (
             <img src={image} alt={title} className='w-7 h-7 fill-primary-light text-primary-light' />
         </div>
         <h2 className='text-xl font-semibold text-primary-darker'>{title}</h2>
-        <p className='text-md font-medium text-dimmed'>{description}</p>
+        <p className='text-sm font-medium text-dimmed'>{description}</p>
     </div>
 )
 

@@ -37,20 +37,20 @@ export const teamCards = [
     {
         image: member1Img,
         name: 'Harmeet Godhani',
-        title: 'Founder @HelpTag365',
-        description: 'Startup india | I-Hub Srujan | SSIP 2.0 | Startup India | Startup Gujarat | Winner of Sharkteen S4',
+        title: 'Founder',
+        description: 'Youngest entrepreneur of India | Winner of SSIP 2.0, Shark Teens 4.0, Startup Gujarat, Startup India, I-Hub Srujan.',
     },
     {
         image: member2Img,
         name: 'Pranjal B',
-        title: 'COO @HelpTag365',
-        description: 'Turnaround specialist and customer favorite across industry. Leading all business transactions in HT365',
+        title: 'Co-founder and COO',
+        description: 'Turnaround specialist and customer favorite across industry. Leading all business transactions in HT365.',
     },
     {
         image: member3Img,
         name: 'Vijay Radadiya',
-        title: 'Co-founder and Mentor @HelpTag365',
-        description: 'Certified Master Trainer & Master Assessor |Career Counselor | Academician | Innovator | Social Change Leader'
+        title: 'Co-founder and Mentor',
+        description: 'Certified Master Trainer & Master Assessor | Career Counselor | Academician | Innovator | Social Change Leader.'
     }
 ]
 
