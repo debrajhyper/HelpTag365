@@ -4,6 +4,8 @@ import { HomePage, LoginPage, NotFoundPage, RegisterPage, AboutPage, ContactUsPa
 import { ABOUT_PATH, CONTACT_US_PATH, HOME_PATH, LOGIN_PATH, NOT_FOUND_PATH, REGISTER_PATH } from '../routes';
 import { Footer, Header } from '../components';
 import { useEffect } from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

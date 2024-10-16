@@ -21,9 +21,9 @@ export const ReviewCard = ({ image, title, description, profilePic, name }) => (
 )
 
 ReviewCard.propTypes = {
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    profilePic: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+    image: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    profilePic: PropTypes.string,
+    name: PropTypes.string
 }

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const TeamCard = ({ image, name, title, description }) => (
-    <div className='w-full p-4 border border-primary-light-hover rounded-3xl bg-white space-y-6'>
+    <div className='mx-3 md:mx-0 p-4 border border-primary-light-hover rounded-3xl bg-white space-y-6'>
         <div className='w-full h-[20rem] rounded-2xl overflow-hidden'>
             <img src={image} className='w-full h-full object-cover' />
         </div>

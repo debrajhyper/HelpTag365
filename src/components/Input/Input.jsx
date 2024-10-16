@@ -60,14 +60,14 @@ export const Input = ({ label, id, name, type, placeholder, className, wrapperCl
 };
 
 Input.propTypes = {
-    label: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    id: PropTypes.string,
+    name: PropTypes.string,
     type: PropTypes.string,
     placeholder: PropTypes.string,
     className: PropTypes.string,
     wrapperClassName: PropTypes.string,
     value: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
     required: PropTypes.bool
 };

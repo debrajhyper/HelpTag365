@@ -5,6 +5,207 @@ import communicationImg from '../images/communication.svg';
 import member1Img from '../images/member1.svg';
 import member2Img from '../images/member2.svg';
 import member3Img from '../images/member3.svg';
+import service1Img from '../../images/service1.svg';
+import service2Img from '../../images/service2.svg';
+import service3Img from '../../images/service3.svg';
+import service4Img from '../../images/service4.svg';
+import service5Img from '../../images/service5.svg';
+import service6Img from '../../images/service6.svg';
+import service7Img from '../../images/service7.svg';
+import service8Img from '../../images/service8.svg';
+import service9Img from '../../images/service9.svg';
+import service10Img from '../../images/service10.svg';
+import service11Img from '../../images/service11.svg';
+import service12Img from '../../images/service12.svg';
+import service13Img from '../../images/service13.svg';
+import service14Img from '../../images/service14.svg';
+import service15Img from '../../images/service15.svg';
+import service16Img from '../../images/service16.svg';
+import service17Img from '../../images/service17.svg';
+import service18Img from '../../images/service18.svg';
+import service19Img from '../../images/service19.svg';
+import service20Img from '../../images/service20.svg';
+import service21Img from '../../images/service21.svg';
+import service22Img from '../../images/service22.svg';
+import service23Img from '../../images/service23.svg';
+import processQRImg from '../../images/processQR.svg';
+import processScanImg from '../../images/processScan.svg';
+import processConnectImg from '../../images/processConnect.svg';
+import company1Img from '../../images/company1.svg';
+import company2Img from '../../images/company2.svg';
+import company3Img from '../../images/company3.svg';
+import company4Img from '../../images/company4.svg';
+import company5Img from '../../images/company5.svg';
+import company6Img from '../../images/company6.svg';
+
+export const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+};
+
+export const companiesImg = [company1Img, company2Img, company3Img, company4Img, company5Img, company6Img]
+
+export const services = [
+    {
+        image: service1Img,
+        title: 'Lights are on',
+    },
+    {
+        image: service2Img,
+        title: 'Vehicle is on',
+    },
+    {
+        image: service3Img,
+        title: 'Vehicle alarm is ringing',
+    },
+    {
+        image: service4Img,
+        title: 'Vehicle in no parking',
+    },
+    {
+        image: service5Img,
+        title: 'Vehicle wrongly parked',
+    },
+    {
+        image: service6Img,
+        title: 'Vehicle had accident',
+    },
+    {
+        image: service7Img,
+        title: 'Vehicle broke down',
+    },
+    {
+        image: service8Img,
+        title: 'Vehicle is impounded',
+    },
+    {
+        image: service9Img,
+        title: 'Pet inside vehicle',
+    },
+    {
+        image: service10Img,
+        title: 'Child inside vehicle',
+    },
+    {
+        image: service11Img,
+        title: 'Elderly inside vehicle',
+    },
+    {
+        image: service12Img,
+        title: 'Driver of vehicle is in trouble',
+    },
+    {
+        image: service13Img,
+        title: 'Vehicle is stolen/misplaced',
+    },
+    {
+        image: service14Img,
+        title: 'Vehicle fuel empty',
+    },
+    {
+        image: service15Img,
+        title: 'Vehicle on fire',
+    },
+    {
+        image: service16Img,
+        title: 'Vehicle needs towing',
+    },
+    {
+        image: service17Img,
+        title: 'Vehicle needs tyre repair',
+    },
+    {
+        image: service18Img,
+        title: 'Vehicle windows open',
+    },
+    {
+        image: service19Img,
+        title: 'Driver misbehaving with passenger',
+    },
+    {
+        image: service20Img,
+        title: 'Driver driving dangerously',
+    },
+    {
+        image: service21Img,
+        title: 'Driver taking unsafe route',
+    },
+    {
+        image: service22Img,
+        title: 'Driver keeping car dirty',
+    },
+    {
+        image: service23Img,
+        title: 'Driver not moving',
+    }
+]
+
+export const processCards = [
+    {
+        image: processQRImg,
+        imageHeight: 36,
+        // title: 'Step 01 - Attach',
+        title: '01 / Attach',
+        subTitle: 'Place the QR sticker on your vehicle.',
+    },
+    {
+        image: processScanImg,
+        imageHeight: 206,
+        imgPosition: 'bottom',
+        // title: 'Step 02 - Scan',
+        title: '02 / Scan',
+        subTitle: 'Anyone needing to contact you can scan the QR code with their smartphone.',
+    },
+    {
+        image: processConnectImg,
+        imageHeight: 206,
+        imgPosition: 'top',
+        // title: 'Step 03 - Connect',
+        title: '03 / Connect',
+        subTitle: 'The scanner is directed to a secure platform where they can leave a message or get in touch without accessing your personal details.',
+    }
+]
+
+export const pricingCards = [
+    {
+        type: 'For Individual',
+        price: '₹199',
+        per: '/Year',
+        description: 'Ensure peace of mind for you and your loved ones, no matter where the road takes you.',
+        features: [
+            '24/7 emergency assistance',
+            'Real-time alerts and notifications',
+            'Privacy-first vehicle monitoring',
+            'Easy setup with any vehicle',
+            'Hassle-free communication with loved ones',
+        ],
+        button: {
+            text: 'Secure Your Vehicle Now',
+            type: 'filled',
+        }
+    },
+    {
+        type: 'Partner with Us',
+        typeDesc: '(for Bulk Safety Solutions)',
+        price: 'Request a quote',
+        description: 'Empower your customers with reliable vehicle safety at scale.',
+        features: [
+            'All Individual services',
+            'Customizable plans for large fleets',
+            'Seamless integration with existing services',
+            'Enhanced safety features for all users',
+            'Dedicated support for bulk orders',
+        ],
+        button: {
+            text: 'Contact Us',
+            type: 'outlined',
+        }
+    }
+]
 
 export const featureCards = [
     {
@@ -1531,3 +1732,82 @@ export const formOptions = {
         }
     ]
 }
+
+// const services = [
+//     ['Lights are on', 'Vehicle is on', '⁠Vehicle alarm is ringing', 'Vehicle in no parking', 'Vehicle wrongly parked', '⁠Vehicle had accident', '⁠Vehicle broke down', 'Vehicle is impounded'],
+//     ['Pet inside vehicle', 'Child inside vehicle', '⁠Elderly inside vehicle', 'Driver of vehicle is in trouble', 'Vehicle is stolen/misplaced', 'Vehicle fuel empty', 'vehicle on fire'],
+//     ['Vehicle needs tyre repair', 'Vehicle windows open', 'Driver misbehaving with passenger', 'Driver driving dangerously', 'Driver taking unsafe route', 'Driver keeping car dirty']
+// ]
+
+// const reviewCards = [
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+//     {
+//         image: starImg,
+//         title: 'Super effective!',
+//         description: 'Within a few days, I was able to pinpoint the issue, test a solution, and confirm its effectiveness—all by interacting with my support team through the Helptag 365 app. The entire process was seamless and hassle-free.',
+//         profilePic: profilePicImg,
+//         name: 'Yeshe Hagl',
+//     },
+// ]

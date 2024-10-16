@@ -1,7 +1,8 @@
 import { Badge } from '../Misc/Badge';
-import { featureCards } from '../../constants';
+import { featureCards, sliderSettings } from '../../constants';
 import { FeatureCard } from '../Card/FeatureCard';
 import { BorderSection } from '../HOC/BorderSection';
+import Slider from "react-slick";
 
 export const WhyChooseHelptag365 = ({ ...props }) => (
     // <BorderSection className='grid grid-cols-1 lg:grid-cols-2 gap-12' {...props}>
@@ -35,11 +36,16 @@ export const WhyChooseHelptag365 = ({ ...props }) => (
                     We are the world’s only QR coded vehicle tag provider that is designed to help resolve any road traffic concerns. Our tags are your second set of eyes watching your vehicle and its occupants; or alert if your prized possession needs attention.
                 </p>
             </div>
-            <div className='w-full px-2 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className='hidden md:grid w-full px-2 md:px-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {
                     featureCards.map((feature, index) => <FeatureCard key={index} {...feature} />)
                 }
             </div>
+            <Slider className='grid md:hidden' {...sliderSettings}>
+                {
+                    featureCards.map((feature, index) => <FeatureCard key={index} {...feature} />)
+                }
+            </Slider>
         </div>
     </BorderSection>
 )

@@ -9,7 +9,7 @@ export const FeatureCard = ({ image, title, description, rowSpan = 2 }) => (
     //     </div>
     //     <p className='text-sm text-dimmed'>{description}</p>
     // </div>
-    <div className={`p-4 flex flex-col justify-start items-start gap-6 rounded-3xl bg-white border-2 border-primary-light-hover`}>
+    <div className={`min-h-56 mx-3 md:mx-0 p-4 flex flex-col justify-start items-start gap-6 rounded-3xl bg-white border-2 border-primary-light-hover`}>
         <div className='w-fit p-3 flex justify-start items-center gap-2 bg-primary-light fill-primary-light rounded-xl'>
             <img src={image} alt={title} className='w-7 h-7 fill-primary-light text-primary-light' />
         </div>
@@ -19,8 +19,8 @@ export const FeatureCard = ({ image, title, description, rowSpan = 2 }) => (
 )
 
 FeatureCard.propTypes = {
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
     rowSpan: PropTypes.number
 }

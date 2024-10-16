@@ -23,7 +23,7 @@ export const ProcessCard = ({ image, imageHeight, imgPosition, title, subTitle }
         //         <p className='text-sm text-dimmed line-clamp-1'>{subTitle}</p>
         //     </div>
         // </div>
-        <div className='space-y-2'>
+        <div className='mx-3 md:mx-0 mb-4 md:mb-0 space-y-2'>
             <div className='p-4 bg-white border border-primary-light-hover rounded-3xl overflow-hidden'>
                 <div className={`relative h-[206px] bg-primary-light rounded-xl flex ${position}`}>
                     <img src={backgroundGridImg} alt="img" className='w-auto h-full mx-auto object-contain' />
@@ -42,9 +42,9 @@ export const ProcessCard = ({ image, imageHeight, imgPosition, title, subTitle }
 }
 
 ProcessCard.propTypes = {
-    image: PropTypes.string.isRequired,
-    imageHeight: PropTypes.string,
+    image: PropTypes.string,
+    imageHeight: PropTypes.number,
     imgPosition: PropTypes.oneOf(['top', 'bottom', 'center']),
-    title: PropTypes.string.isRequired,
-    subTitle: PropTypes.string.isRequired
+    title: PropTypes.string,
+    subTitle: PropTypes.string
 }
