@@ -583,6 +583,7 @@ export const formOptions = {
             label: "Gujarat",
             value: "Gujarat",
             cities: [
+                { label: "Junagadh", value: "Junagadh" },
                 { label: "Ahmedabad", value: "Ahmedabad" },
                 { label: "Surat", value: "Surat" },
                 { label: "Vadodara", value: "Vadodara" },

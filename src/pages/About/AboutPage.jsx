@@ -1,8 +1,12 @@
-
+import { useEffect } from "react";
 import { HeroBgSection, OurTeam, QRSection, Testimony } from "../../components";
 import { WhyChooseHelptag365 } from "../../components/Section/WhyChooseHelptag365";
 
 export function AboutPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
             <HeroBgSection>

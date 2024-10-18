@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MoveLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import mapImg from '../../images/map.svg';
@@ -59,6 +59,10 @@ export function ContactUsPage() {
         console.log(contactFormData);
         setContactFormData(defaultFormData);
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>

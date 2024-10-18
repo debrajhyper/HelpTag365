@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { MoveLeft } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { formOptions } from '../../../constants';
@@ -52,10 +52,22 @@ export function RegisterPage() {
         setRegisterFormData(defaultFormData);
     }
 
+    // const cityOptions = useMemo(() => {
+    //     const selectedState = formOptions.statesCitiesOptions.find(state => state.value === registerFormData.state);
+    //     return selectedState ? selectedState.cities : [];
+    // }, [registerFormData.state]);
+
     const cityOptions = useMemo(() => {
         const selectedState = formOptions.statesCitiesOptions.find(state => state.value === registerFormData.state);
-        return selectedState ? selectedState.cities : [];
+        return selectedState
+            ? selectedState.cities
+                .sort((a, b) => a.label.localeCompare(b.label)) // Sort by the 'label' property
+            : [];
     }, [registerFormData.state]);
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <main className='relative w-full h-full px-2.5 md:px-8 overflow-hidden'>

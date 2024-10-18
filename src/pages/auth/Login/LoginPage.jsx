@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MoveLeft } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { HOME_PATH, REGISTER_PATH } from '../../../routes';
@@ -27,6 +27,10 @@ export function LoginPage() {
         console.log(loginFormData);
         setLoginFormData(defaultFormData);
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>

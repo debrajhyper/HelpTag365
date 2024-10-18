@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import Slider from "react-slick";
 import tickImg from '../../images/tick.svg';
 import { companiesImg, pricingCards, processCards, services, sliderSettings, reviewCards } from '../../constants';
 import { ReviewCard, Badge, BorderSection, GradientSection, ProcessCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge, TrialButton } from '../../components';
 
 export function HomePage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <main className='w-full h-full px-2.5 md:px-8 overflow-hidden'>
             <HeroBgSection>
