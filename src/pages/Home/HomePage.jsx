@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import tickImg from '../../images/tick.svg';
-import { companiesImg, pricingCards, processCards, services, sliderSettings } from '../../constants';
-import { Badge, BorderSection, GradientSection, ProcessCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge, TrialButton } from '../../components';
+import { companiesImg, pricingCards, processCards, services, sliderSettings, reviewCards } from '../../constants';
+import { ReviewCard, Badge, BorderSection, GradientSection, ProcessCard, QRSection, OurTeam, HeroBgSection, WhyChooseHelptag365, ServiceBadge, TrialButton } from '../../components';
 
 export function HomePage() {
     return (
@@ -24,7 +24,7 @@ export function HomePage() {
                             Get a FREE trial
                         </button> */}
                         <TrialButton />
-                        <p className="text-sm text-dimmed mt-5">365 Days  |  No credit card require!</p>
+                        <p className="text-sm text-dimmed mt-5">365 Days  |  No credit card required!</p>
                     </div>
                 </div>
             </HeroBgSection>
@@ -51,7 +51,7 @@ export function HomePage() {
                 <h1 className='text-3xl md:text-5xl font-semibold tracking-tight !leading-tight text-center'>Proprietary Next <br /> Generation Intelligent</h1>
                 <p className='text-md font-medium text-dimmed text-center'>We’re all in one solution buddy in traffic whenever, wherever you need! Help is just a scan away.</p>
             </GradientSection>
-            <section className=" overflow-hidden relative pt-0 md:pt-0 mb-0 md:mb-12">
+            <section className="overflow-hidden relative pt-0 md:pt-0 mb-0 md:mb-12">
                 {/* {services.map((service, index) => (
                     <div key={index} className="w-full mb-5 overflow-hidden">
                         <div className={`inline-flex gap-5 whitespace-nowrap ${index % 2 === 0 ? 'animate-smooth-scroll' : 'animate-smooth-scroll-reverse'} hover:pause`}>
@@ -143,10 +143,21 @@ export function HomePage() {
                     <div className='w-full px-2 md:px-16 py-12 md:py-16 flex flex-col justify-between items-center gap-12 text-center'>
                         <Badge text='Reviews' />
                         <div className='flex flex-col justify-between items-center gap-6'>
-                            <h1 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Thousands of Customers <br />are Happy with HelpTag365</h1>
+                            <h1 className='text-4xl md:text-5xl font-semibold tracking-tight !leading-tight'>Thousands of Users <br />are Happy with HelpTag365</h1>
                             <p className='max-w-5xl text-md font-medium text-dimmed'>At Helptag 365, we specialize in providing innovative QR sticker solutions designed to enhance safety and streamline communication for the automotive industry.</p>
                         </div>
-                        <TrialButton />
+                        {/* <TrialButton /> */}
+                        <div className="container mx-auto w-full overflow-hidden relative">
+                            <div className="w-full h-full absolute">
+                                <div className="w-1/6 h-full absolute z-10 left-0" style={{ background: 'linear-gradient(to right, #ffffffa8 0%, #ffffff00 100%)' }}></div>
+                                <div className="w-1/6 h-full absolute z-10 right-0" style={{ background: 'linear-gradient(to left, #ffffffa8 0%, #ffffff00 100%)' }}></div>
+                            </div>
+                            <div className="w-fit flex items-center justify-between gap-6 animate-carousel-scroll hover:pause">
+                                {
+                                    [...reviewCards, ...reviewCards, ...reviewCards, ...reviewCards].map((review, index) => <ReviewCard key={index} {...review} />)
+                                }
+                            </div>
+                        </div>
                     </div>
                 </div>
             </BorderSection>

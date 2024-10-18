@@ -32,7 +32,7 @@ export const Footer = () => (
                         <img src={logoImg} alt="logo" className="h-3" />
                         <img src={brandName} alt="brand name" className="h-3" />
                     </Link>
-                    <p className='text-dimmed text-md'>Which gives a total solution of 8 problems. It provides solutions to many problems such as car no-parking, car lights staying on, car door staying open, other people&apos;s car not being able to leave because of your car, car accident.</p>
+                    {/* <p className='text-dimmed text-md'>Which gives a total solution of 8 problems. It provides solutions to many problems such as car no-parking, car lights staying on, car door staying open, other people&apos;s car not being able to leave because of your car, car accident.</p> */}
                     <div className='flex flex-col sm:flex-row justify-start items-center gap-3'>
                         <Input wrapperClassName='sm:mb-0 w-full md:6/6 xl:w-3/6' className='p-2.5' id="email" name="email" type="email" placeholder="example@gmail.com" />
                         <button className="w-full sm:w-fit py-2.5 px-8 font-semibold border rounded-xl bg-primary-normal hover:bg-primary-normal-hover border-primary-normal-hover text-white cursor-pointer">
@@ -59,8 +59,8 @@ export const Footer = () => (
             </div>
             <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-dimmed">
                 <p>© 2024 Helptag365. All right reserved.</p>
-                {/* <p>Designed by @Zetastudio</p> */}
-                <p>Developed by <a className='underline' href="https://www.linkedin.com/in/debrajkarmakar010/" target="_blank" rel="noreferrer">Debraj Karmakar</a></p>
+                <p>Designed by @Zetastudio</p>
+                {/* <p>Developed by <a className='underline' href="https://www.linkedin.com/in/debrajkarmakar010/" target="_blank" rel="noreferrer">Debraj Karmakar</a></p> */}
             </div>
         </div>
     </footer>

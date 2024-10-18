@@ -25,10 +25,10 @@ export const ProcessCard = ({ image, imageHeight, imgPosition, title, subTitle }
         // </div>
         <div className='mx-3 md:mx-0 mb-4 md:mb-0 space-y-2'>
             <div className='p-4 bg-white border border-primary-light-hover rounded-3xl overflow-hidden'>
-                <div className={`relative h-[206px] bg-primary-light rounded-xl flex ${position}`}>
-                    <img src={backgroundGridImg} alt="img" className='w-auto h-full mx-auto object-contain' />
+                <div className={`relative h-[206px] bg-[#F8F8FF] rounded-xl flex ${position} overflow-hidden`}>
+                    {/* <img src={backgroundGridImg} alt="img" className='w-auto h-full mx-auto object-contain' /> */}
                     {title === 'Step 03 - Connect' && <img src={ellipseGroupImg} alt="img" className='absolute w-auto h-full mx-auto object-contain' />}
-                    <div className={`absolute w-auto h-${imageHeight}`}>
+                    <div className={`absolute w-auto h-${imageHeight} overflow-hidden`}>
                         <img src={image} alt="img" className='w-auto h-full mx-auto object-contain' />
                     </div>
                 </div>
